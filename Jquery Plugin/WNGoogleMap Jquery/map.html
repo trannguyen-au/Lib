@@ -1,0 +1,30 @@
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<title>WN Google Map Jquery</title> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="wnGoogleMap.js"></script> 
+
+<script type="text/javascript"> 
+$(document).ready(function() {
+	// load the map when the document load up
+	$("#map_canvas").wnGoogleMap({address:$("#address").val()});
+	
+	// refresh the map when search button clicked
+	$("#btnSearch").click(function() {
+		$("#map_canvas").wnGoogleMap({address:$("#address").val()});
+	});
+	
+});
+
+</script> 
+</head> 
+<body> 
+  <div> 
+    <input id="address" type="textbox" value="111 queensbridge street south melbourne australia"> 
+    <input id="btnSearch" type="button" value="Search" > 
+  </div> 
+<div id="map_canvas" style="height:90%;top:30px"></div> 
+</body> 
+</html> 

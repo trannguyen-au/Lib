@@ -1,0 +1,16 @@
+#filterPark .filter-park-type  {
+  width: 140px;
+}
+
+#filterPark .check-list-content  {
+  width: 138px;
+}
+
+
+.park-google-map iframe {
+  margin: 0px; 
+  padding: 0px; 
+  border: 0px; 
+  width: 480px; 
+  height: 310px;
+}

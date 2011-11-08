@@ -1,0 +1,35 @@
+table.agenda-listing-table {
+  border-collapse: collapse;
+  border:1px solid #fff;
+  width:100%;
+}
+
+table.agenda-listing-table th {
+  border:1px solid #fff;
+  color: #FFF;
+  padding: 5px 0px;
+  text-align:center;
+  background: #4F8DB2;
+}
+
+table.agenda-listing-table th a, table.agenda-listing-table th a:visited {
+  color:#FFF;
+}
+
+table.agenda-listing-table td {
+  border:1px solid #fff;
+  padding:10px;
+  background: #F9F9FB;
+}
+
+table.agenda-listing-table tr.row-default td{
+  background: #FFF;
+}
+
+table.agenda-listing-table td.center {
+  text-align:center;
+}
+
+table.agenda-listing-table td a, table.agenda-listing-table td a:visited {
+  color: #333;
+}

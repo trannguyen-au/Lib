@@ -1,0 +1,23 @@
+.header, .footer, .menu, .footer-link, .left-nav-wrap, .filter-wrap, .feedback-control-wrap, .feedback-control{
+  display:none;
+}
+
+body {
+  background:#fff;
+  color:#000;
+}
+
+a:link, a:visited, a h1, a h2, a h3, a h4 {
+  color: #00f;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+div.middle-content {
+  width:100%;
+}
+
+h1,h2,h3,h4 {
+  color: #333;
+}

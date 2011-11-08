@@ -1,0 +1,49 @@
+.drop-down-check-list {
+}
+
+.drop-down-check-list .check-list-header,
+.drop-down-check-list .check-list-content{
+  background-color: #FFF;
+  color: #000;
+}
+
+.drop-down-check-list .check-list-header{
+  border: 1px solid #CFCFCF;
+  background: #FFFFFF url('DropDown.jpg') no-repeat right top;
+  height: 22px;
+}
+
+.drop-down-check-list .check-list-header span {
+  display: block;
+  padding: 4px;
+}
+
+.drop-down-check-list .check-list-content{
+  border: 1px solid #CFCFCF;
+  color: #8B8B8B;
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.drop-down-check-list .check-list-content input,
+.drop-down-check-list .check-list-content td{
+  width: auto;
+  height:auto;
+}
+
+/*display the dropdown content*/
+.drop-down-check-list a:hover .check-list-content {
+    visibility: visible;
+}
+
+.drop-down-check-list a:hover {
+  background-color: transparent; /* REQUIRED FOR IE 6*/
+  text-decoration:none;
+}
+
+.drop-down-check-list table label
+{
+    position: relative; 
+    z-index: -1; /* REQUIRED FOR IE 6*/
+}

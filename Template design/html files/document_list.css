@@ -1,0 +1,159 @@
+.az-button-list-wrap {
+  background-color: #3D7292;
+  height: 27px;
+}
+
+.az-button-list-wrap ul {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.az-button-list-wrap ul li{
+  width:16px;
+  display:inline-block;
+  background:transparent;
+  color: #fff;
+  padding:6px 3.7px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.az-button-list-wrap ul li:hover{
+  background:#6EA2C2;
+}
+
+.az-button-list-wrap ul li a{
+  width:25px;
+  height:28px;
+  padding:3px 0px 0px 5px;
+  display:block;
+}
+
+li.item {
+  padding:3px 0px;
+  display:block !important;
+}
+
+.document-list-wrap a {
+  color: #576570;
+}
+
+.document-list  .scSearchInputOption
+  {
+    width:100%;
+  }
+  
+ .document-list  #pagination-alpha li{
+    color:#FFFFFF;
+    float:left;
+    font-weight:bold;
+    text-align: center;
+    width:19px;
+    list-style:none outside none;
+    cursor:pointer;
+  }
+  
+.document-list    .content_article_body ul,
+.document-list    .content_article_body ol
+  {
+    margin:0px;
+    padding:0px;
+  }
+    
+.document-list    #search-form .search-text
+  {
+    float:left;
+    margin: 7px 7px 3px;
+  }
+  
+/*.document-list    .inputBox
+  {
+    border: 1px solid #CFCFCF;
+    color:#8B8B8B;
+    float:left;
+    font-size: 12px;
+    height: 16px;
+    margin-bottom: 0;
+    padding:3px;
+    width: 190px;
+  } */
+  
+.document-list    #search-form select
+  {
+    border: 1px solid #CFCFCF;
+    color:#8B8B8B;
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 300px;
+  }
+  
+.document-list    .policies-buttons
+  {
+    float:right;
+  }
+  
+.document-list    #result-list
+  {
+    margin-left;0px;
+    list-style:none outside none;
+    line-height:163%;
+    margin: 0 0 1em 0em;
+    padding-left:0px;
+  }
+  
+.document-list    #result-list .highlight
+  {
+    /*    background-color:#F7F7F7; */
+    background-color:#F0F0F1;
+  }
+
+/*
+.document-list    #result-list .item
+  {
+    list-style:none outside none;
+    border-top:1px solid #CFCFCF;
+    padding:10px;
+  } */
+  
+.document-list    .rel-link
+  {
+    background-color:transparent;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    outline: 0 none;
+    font-size:12px;
+  }
+  
+.document-list    .item a
+  {
+    text-decoration:none;
+  }
+  
+.document-list    .item-summary
+  {
+    margin-top:0px;
+  }
+  
+.document-list    .hidden{
+    display:none;
+  }
+  
+.document-list  .item .compressor
+ {
+    font-weight:bold;
+    padding: 5px 0 3px;
+  }
+  
+.document-list    .item-subcontent
+  {
+    border-top: 1px solid #CFCFCF;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  
+.document-list    .item-subcontent table
+  {
+    margin:5px;
+  }

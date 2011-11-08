@@ -1,0 +1,172 @@
+.menu{
+  padding:0px;
+  height: 40px;
+}
+
+.main-menu {
+  padding:0px;
+  margin:0px;
+  list-style-type:none;
+}
+
+.menu li.top-level {
+  float:left;
+  position:relative;
+  margin:0px;
+  display:block;
+  text-align:center;
+  z-index:8000;
+  list-style-type:none;
+}
+
+.menu li.top-level a.top-link:hover {
+ background:#4883A6;
+}
+
+.menu li:hover li, 
+.menu a:hover li, 
+.menu li:hover ul, 
+.menu a:hover ul,
+.menu li.top-level a:hover ul 
+{
+  visibility: visible;
+}
+
+.menu ul :hover > a.top-link { background:#4883A6; }
+
+.menu table {
+   padding:0;
+  margin:0;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.menu .top-level a, 
+.menu .top-level a:visited {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight:bold;
+  display:block;
+}
+
+.menu  .top-level a.top-link{
+  display:block;
+  padding-top:12px;
+  height: 28px;
+}
+
+.menu  .top-level a span.menu-text{
+  padding: 0px 7.5px;
+  border-left: 1px solid #FFFFFF;
+}
+
+.menu .top-level:first-child a span.menu-text, 
+.menu .top-level:first-child a:visited span.menu-text{
+  border-left: 0 none transparent;
+}
+
+.menu .second-level {
+  position:absolute;
+  visibility:hidden;
+  width:204px;
+  background-color: #4883A5;
+  list-style-type:none;
+  height:auto;
+  top:40px;
+  left:0px;
+  padding:0px 8px;
+  margin:0px;
+}
+
+.menu .second-level li {
+  float:left;
+  display:block;
+  text-align:left;
+  width:204px;
+  line-height:22px;
+}
+
+.menu .second-level li a, .menu .second-level li a:visited {
+  padding-left:20px;
+  padding-right:5px;
+  color:#fff;
+  text-decoration:none;
+  line-height:22px;
+}
+
+.menu .second-level li a:hover {
+  background-color:#3A6784;
+  text-decoration:none;
+}
+
+.menu li.bottom-menu {
+    background: url(box_corners_lower_main_small.gif) -1px 0px no-repeat;
+    width:198px;
+    height:5px;
+    line-height:5px;
+    padding:0px;
+}
+
+.menu .drop-left {
+  margin-left:-105px;
+}
+
+*+html .menu .second-level { /* IE 7 */
+  position:absolute;
+  left:-40px;
+}
+
+
+/* BEGIN: IE 6 styling */
+* html .menu .second-level {
+  position:absolute;
+}
+
+/* TO-DO: fix upon agreement on the top-menu */
+* html .menu  .top-level-1 a.top-link{
+   width:32px;
+}
+
+* html .menu  .top-level-2 a.top-link{
+   width:70px;
+}
+
+* html .menu  .top-level-3 a.top-link{
+   width:187px;
+}
+
+* html .menu  .top-level-4 a.top-link{
+   width:167px;
+}
+
+* html .menu  .top-level-5 a.top-link{
+   width:35px;
+}
+
+* html .menu  .top-level-6 a.top-link{
+   width:35px;
+}
+
+* html .menu  .top-level-7 a.top-link{
+   width:35px;
+}
+
+* html .menu  .top-level-8 a.top-link{
+   width:160px;
+}
+
+* html .menu  .top-level-9 a.top-link{
+   width:83px;
+}
+
+* html .menu  .top-level-10 a.top-link{
+}
+* html .menu  .top-level-11 a.top-link{
+}
+
+* html .menu  .top-level-1 a.top-link .menu-text{
+   border: 0 none transparent;
+}
+
+/* END: IE 6 styling */

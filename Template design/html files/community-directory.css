@@ -1,0 +1,77 @@
+.community-directory-wrap {
+  padding-left:10px;
+}
+
+a#btnOnlineForm, a#btnOnlineForm:visited {
+  display:inline-block;
+  width:203px;
+  height:28px;
+  background:#4F8DB2;
+  color:#fff;
+  margin-right:10px;
+}
+
+a#btnOnlineForm:hover {
+  background:#000;
+}
+
+a#btnShowMap, a#btnShowMap:visited {
+  display:inline-block;
+  width:115px;
+  height:28px;
+  background:#4F8DB2;
+  color:#fff;
+}
+
+a#btnShowMap:hover {
+  background:#000;
+}
+
+/* added by H.Nguyen on 24/10/2011 */
+.community-directory-wrap ul,
+.community-directory-wrap li{
+  list-style-type:none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.filter-category ul {
+  float:left;
+  padding-left: 10px;
+}
+
+.filter-category ul:first-child {
+  padding-left : 0px;
+}
+
+.filter {
+  margin-bottom: 10px;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.filter h3 {
+  margin-top:0px;
+}
+
+div.filter > div {
+  margin-left: 10px;
+}
+
+.community-directory-list ul {
+  margin-top: 5px;
+}
+
+.community-directory-list li {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.community-directory-details {
+  margin-bottom: 10px;
+}
+
+.community-extra-function {
+  margin-bottom: 15px;
+}
+

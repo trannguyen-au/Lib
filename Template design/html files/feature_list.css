@@ -1,0 +1,157 @@
+.featurelisttext
+{
+  float:left;
+  height:265px;
+  background-color:#f4f5f7;
+  overflow:hidden;
+}
+.featurelisttext ul
+{
+  margin:0px;
+  padding:0px;
+}
+
+.featurelisttext,
+.featurelisttext ul 
+{
+    width:230px;
+}
+
+.featurelisttext ul li a,
+.featurelisttext ul li a:visited
+{
+  background-color:transparent !important;
+  color:#ffffff !important;
+}
+
+.featurelisttext ul li
+{
+  padding:15px 20px;
+  background-color:#455660;
+  font-weight:bold;
+  font-size:12px;
+  height:22px;
+  border-bottom:1px dotted #ccccce;
+  cursor:pointer;
+}
+.featurelisttext ul li.selected
+{
+  background-repeat: repeat-x;
+  background-color:#2D3B44;
+}
+.featurelisttext ul li.selected .articleListItem
+{
+  color:#ffffff;
+}
+.featurelistimg
+{
+  float:left;
+  width:490px;
+/*  margin-top:1px; */
+}
+
+#slider {
+    position: relative; /* important */
+  overflow: hidden; /* important */
+}
+#sliderContent {
+  position: absolute;
+  top: 0;
+  margin-left: 0;
+  margin:0px;
+  padding:0px;
+}
+
+#slider ,
+#sliderContent,
+.sliderImage img
+{
+   width: 730px;
+   height: 265px;
+}
+
+
+.sliderImage {
+    float: left;
+    position: relative;
+  display: none;
+}
+
+.sliderImage span {
+    position: absolute;
+    padding: 10px;
+    padding-top: 7px;
+    font-weight:bold;
+    width: 710px;
+    height:40px;
+    background-color: #000;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    color: #fff;
+}
+
+.sliderImage span.bg {
+  height:50px;
+}
+
+.sliderImage span.text {
+  background-color:transparent;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;  
+}
+
+.sliderImage .slide-text .text h1 
+{
+    color:#FFF;
+    margin :0;
+    margin-bottom: 3px;
+    font-weight:normal;
+}
+
+#slider ul li {
+  list-style-type: none;
+}
+#sliderContent .bottom {
+  top: 205px;
+    left: 0;
+  overflow:hidden;
+}
+.featurelink {
+  float:right;
+  margin:0px;
+}
+.featurelink a {
+  color:#ffffff;
+  font-weight:bold;
+}
+#slidercontrols {
+  z-index: 1;
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  display:none;
+  cursor:pointer;
+}
+
+#slidercontrols .slider-control-button{
+  background-image: url(banner_dot_passive.gif);
+  width:19px;
+  height:19px;
+  float:left;
+  margin-left: 5px;
+}
+
+#slidercontrols div.selected{
+  background-image: url(banner_dot_active.gif);
+}
+
+/* IE 6 */
+* html .featurelisttext ul li
+{
+  height: 17px;
+}

@@ -1,0 +1,266 @@
+/* CREATED BY WERY 25/10/2011 */
+
+/** COMMON LAYOUT LIST STYLE - USE TO CLEAR THE DEFAULT LAYOUT 
+OF UL LIST AND PREPARE IT TO BE USED AS A LAYOUT TAG **/
+ul.layout-list {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+
+ul.layout-list li{
+  list-style-type:none;
+  display:block;
+}
+
+/** COMMON FILTER STYLE **/
+.filter-wrap {
+  background:#F8F9FB;
+  padding:15px 20px 0px 10px;
+  height:45px;
+  margin:0px 0px 10px 0px;
+}
+
+.filter-combo-box-wrap {
+  padding: 2px 10px 0px 10px;
+  float:left;
+}
+
+.filter-keyword-wrap {
+  width:221px;
+  height:28px;
+  background:url(searchBox.jpg);
+  float:left;
+}
+
+.filter-keyword-wrap input {
+  border:0px;
+  margin:4px 0px 0px 30px;
+  width:180px;
+  color: #333;
+  height:20px;
+}
+
+/** FILTER TRIGGER INPUT VERSION **/
+.filter-wrap div.filter-trigger {
+  float:left;
+  margin-left: 10px;
+}
+
+.filter-wrap div.filter-trigger input {
+  color:#fff;
+  font-weight:bold;
+  margin:0px;
+  border:0px;
+  width:36px;
+  height:28px;
+  background: #44555F;
+  cursor:pointer;
+}
+
+.filter-wrap div.filter-trigger input:hover {
+  background: #67808F;
+  text-decoration:none;
+}
+
+/** FILTER TRIGGER HYPERLINK VERSION **/
+.filter-wrap div.filter-trigger a, .filter-wrap div.filter-trigger a:visited {
+  color:#fff;
+  font-weight:bold;
+  padding:7px 0px 0px 10px;
+  margin:0px;
+  border:0px;
+  width:26px;
+  height:21px;
+  background: #44555F;
+  display:block;
+}
+
+.filter-wrap div.filter-trigger a:hover {
+  background: #67808F;
+  text-decoration:none;
+}
+
+a.search-button {
+  height: 30px;
+  width: 36px;
+  display:block;
+  background: url(button_go.gif) no-repeat;
+}
+
+a.search-button:hover {
+  background: url(button_go_over.gif) no-repeat;
+}
+
+/** DIV LIST VERSION **/
+.list-view-block {
+  margin:10px 0px;
+}
+
+.list-view-block img {
+  float:left;
+  margin: 0px 10px 20px 0px;
+}
+
+.list-view-block a, .list-view-block a:visited {
+  color:#576570;
+}
+
+/* UL LIST VERSION */
+
+/* 2 column*/
+ul.list-view {
+  width:730px;
+}
+
+ul.list-view li {
+  border-bottom:1px dotted #ddd;
+  width:730px;
+  padding: 0px 0px 15px 0px;
+}
+
+ul.list-view li img {
+  float:left;
+  margin: 0px 10px 20px 0px;
+}
+
+ul.list-view li.last-item {
+  border:0px;
+}
+
+ul.list-view a, ul.list-view a:visited {
+  color:#576570;
+}
+
+/* 1 column */
+ul.one-column {
+  width:960px !important; 
+}
+
+ul.one-column li {
+  width:960px !important;
+}
+
+/** PAGING STYLE **/
+.paging-wrap {
+  margin:30px 0px 20px 0px;
+}
+.paging-wrap ul li {
+  min-width:20px;
+  text-align:center;
+  height:20px;
+  overflow:hidden;
+  padding-top:5px;
+  display:inline-block ;
+}
+
+.paging-wrap ul li input{ /* Previous / Next trigger */
+  border:0px;
+  background:transparent;
+  cursor:pointer;
+}
+
+.paging-wrap a, .paging-wrap a:visited {
+  background:#F3F4F6;
+  padding:5px 8px;
+  border-right:2px solid #fff;
+  display:inline;
+  min-width:25px;
+  color:#576570;
+}
+
+.paging-wrap a.paging-nav, 
+.paging-wrap a.paging-nav:visited {
+  background:#FFF;
+}
+
+.paging-wrap a.paging-nav:hover{
+  background:#FFF;
+  color: #576570;
+  text-decoration:underline;
+}
+
+.paging-wrap a:hover, 
+.paging-wrap li.current {
+  text-decoration:none;
+  background:#B3131D;
+  color:#fff;
+}
+
+/* IE FIX FOR THE PAGING */
+* html .paging-wrap ul li  {
+  float:left;
+  padding: 0px 2px 2px 0px;
+}
+
+*+html .paging-wrap ul li  {
+  float:left;
+  padding: 0px 2px 2px 0px;
+}
+
+/** SPECIFIC TEXT STYLE **/
+
+p.light-blue {
+  color: #4E8DB0;
+  margin:0px 0px 10px 0px;
+}
+
+h3.light-blue {
+  color: #4B83A8;
+}
+
+span.right-arrow a, a.right-arrow {
+  display:inline-block;
+  width:auto;
+  padding:6px 20px 3px 8px;
+  margin-right:10px;
+  color:#fff;
+  height:19px;
+  background: #427797 url(button_arrow_right_blue.gif) right  no-repeat;
+}
+
+span.right-arrow a:hover, a.right-arrow:hover {
+  background-color: #4F8DB2;
+  text-decoration:none;
+}
+
+span.right-arrow input {
+  height:28px;
+  border:0px;
+  background: #427797 url(button_arrow_right_blue.gif) right  no-repeat;
+  cursor:pointer;
+  color: #fff;
+  padding-right:20px;
+}
+
+span.left-arrow input:hover {
+  background-color: #4F8DB2;
+}
+
+span.left-arrow a, a.left-arrow {
+  display:inline-block;
+  width:auto;
+  padding:5px 8px 4px 20px;
+  margin-right:10px;
+  color:#fff;
+  height:19px;
+  background: #427797 url(button_arrow_left_blue.gif) 5px 10px  no-repeat;
+}
+
+span.left-arrow a:hover, a.left-arrow:hover {
+  background-color: #4F8DB2;
+  text-decoration:none;
+}
+
+span.left-arrow input {
+  height:28px;
+  border:0px;
+  background: #427797 url(button_arrow_left_blue.gif) 5px 10px  no-repeat;
+  cursor:pointer;
+  color: #fff;
+  padding-left:20px;
+}
+
+span.left-arrow input:hover {
+  background-color: #4F8DB2;
+}

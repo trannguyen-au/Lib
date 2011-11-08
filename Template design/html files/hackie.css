@@ -1,0 +1,14 @@
+* html .suggestion-box {  /* IE 6*/
+	right: -10px;
+}
+
+* html .homepage-quick-link ul li, * html .left-nav-wrap li  {
+	height: 30px;
+}
+
+
+
+/*
+*+html .css {  IE 7
+}
+*/

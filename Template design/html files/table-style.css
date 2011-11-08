@@ -1,0 +1,110 @@
+table.blue-style {
+  width:100%;
+  border:1px solid #fff;
+  border-collapse: collapse;
+  margin:20px 0px 25px 0px;;
+}
+
+table.blue-style th {
+  background: #4F8DB2;
+  color:#fff;
+  padding:10px 10px 7px 15px;
+  border:1px solid #fff;
+  min-height:11px;
+  text-align:left;
+}
+
+table.blue-style th a{
+  background: #4F8DB2;
+  color:#fff !important;
+  font-weight:bold;
+}
+
+table.blue-style .center{
+  text-align:center;
+}
+
+table.blue-style td {
+  padding:10px 10px 7px 15px;
+  border:1px solid #fff;
+  min-height:11px;
+  background:#F3F4F6;
+  vertical-align:top;
+}
+
+table.blue-style td a {
+  color: #111;
+}
+
+table.blue-style td.hidden-cell {
+  display:none;
+  border:0px;
+  float:left;
+}
+
+table.blue-style td.light {
+  background:#F9F9FB;
+  vertical-align:top;
+}
+
+table.blue-style td.first {
+  width:230px;
+}
+
+
+/*** TOGGLE HEADER STYLED TABLE - USED IN EMPLOYMENT APPLY PAGE ***/
+
+table.toggle-header th {
+  cursor:pointer;
+  text-decoration:none;
+}
+
+table.toggle-header th:hover {
+  text-decoration:underline;
+}
+
+table.toggle-header td{
+  padding:5px 5px 5px 15px !important;
+}
+
+table.toggle-header td.first {
+  width:230px;
+}
+
+/** INNER TABLE **/
+table.blue-style td table {
+  border:0px;
+  border-collapse: collapse;
+  margin:0px; padding:0px;
+  text-align:left;
+  border:0px;
+}
+
+table.blue-style td table td{
+  border:0px;
+  margin:0px; padding:0px !important;
+}
+
+table.blue-style td div {
+  width:auto !important;
+  height:auto !important;
+  display:block;
+}
+
+/* FORM CONTROL IN THE TABLE */
+
+table.blue-style td label {
+  padding-left:5px;
+}
+
+table.blue-style td input[type="text"], table.blue-style td table td input[type="text"] {
+  width:250px;
+}
+
+table.blue-style td input[type="checkbox"] {
+  width:auto;
+}
+
+table.blue-style td select {
+  min-width:100px;
+}

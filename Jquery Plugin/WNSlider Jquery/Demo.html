@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	
+	<script type="text/javascript" src="wnSlider.js"></script>
+	<script type="text/javascript" src="wnGoogleMap.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#slider").wnSlider( {
+			timerInterval:6000,
+			pagingType:"image", 
+			autoRotate:false , 
+			effect:"fade",
+		});
+		
+		$(".wnMap").wnGoogleMap();
+	});
+	</script>
+	
+	<link type="text/css" rel="stylesheet" href ="site_ie6.css" /> 
+	<link type="text/css" rel="stylesheet" href ="wnSlider.css" /> 
+	<style>
+	
+	body {
+		font-family: Arial;
+		background: #DDFBF3;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	</style>
+</head>
+
+<body>
+<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff">
+<div style="float:left">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque, tortor id eleifend molestie, tortor urna fermentum odio, eu pharetra purus est eu ligula. Quisque sapien nibh, mollis in laoreet vitae, ullamcorper sit amet lacus. Maecenas sagittis suscipit lacus a posuere. Donec sed sapien eget sapien tempor volutpat. Nulla ultricies orci sed erat hendrerit molestie. Morbi diam nibh, fringilla in blandit et, tristique sed est. Proin sollicitudin ullamcorper urna, non tempor lacus vulputate at. Curabitur vestibulum interdum euismod. Cras nec nibh nunc.</div> <div class="clear"></div>
+
+	<div style="float:left; width: 150px; background:#ddd">
+	This is a fake navigation
+	</div>
+	
+	<div class="wnMap" id="map1" style="margin:0px; padding:0px;border:0px;width:400px;height:310px; float:left" rel='Midland Highway White Hills Bendigo 3552 Australia+(Bendigo Botanic Garden)'></div>
+	
+	<div style="float:right;width:400px">
+		<div id="slider">
+			<img src="1.jpg" title="1.jpg" style="display:none" width="400px">
+			<img src="2.jpg" title="2.png" style="display:none" width="400px">
+			<img src="3.jpg" title="Third Image" style="display:none" width="400px">
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+</div>
+</body>
+</html>

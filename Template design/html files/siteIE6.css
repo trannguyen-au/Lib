@@ -1,0 +1,14 @@
+.suggestion-box  {
+	/* IE 6*/
+	right:0px; 
+	top:-1px;
+}
+
+.search-box #keyword_search , .search-box input{
+	padding: 5px;
+	width:200px;
+	height: 12px;
+	color: #999999;
+	border:0px;
+	position:relative;
+}

@@ -1,0 +1,134 @@
+.event-filter {
+  float:left;
+  width:210px;
+  color:#fff;
+  display:inline-block;
+  background:#6F94AE;
+  margin-bottom:10px;
+  font-size:11px;
+}
+
+.event-filter  h2 {
+  color:#FFF;
+  font-size:16px;
+  padding-right:10px;
+  padding-left:15px;
+  padding-bottom:10px;
+  margin-bottom:0px;
+  border-bottom:1px solid #799EB4;
+}
+
+.event-filter  h4 {
+  color:#fff;
+}
+
+.event-filter table {
+  width:180px;
+  border:0px;
+}
+
+.event-filter table td {
+  height:28px;
+}
+
+.event-filter table input {
+  width:110px;
+  border:0px;
+  height: 20px;
+}
+
+.event-filter-padding {
+  padding:5px 15px 15px 15px;
+}
+
+.event-filter .from-to-date {
+  line-height: 20px;
+}
+
+.event-filter .from-to-date label {
+  width:35px;
+  display:inline-block;
+}
+
+.event-filter .from-to-date  input {
+  width:105px;
+  display:inline-block;
+}
+
+.event-filter .from-to-date  .calendar-image {
+  padding-bottom:4px;
+  width:18px;
+  height:18px;
+  display:inline-block;
+  vertical-align:bottom;
+  
+}
+
+.event-filter .from-to-date  .calendar-image img {
+  width:18px;
+  height:18px;
+}
+
+.event-filter input.keyword {
+  width:168px;
+  border:1px solid #eee;
+  padding:2px 5px;
+}
+
+.event-filter select {
+  width:180px;
+}
+
+.event-filter  a, .event-filter  a:visited{
+  color:#fff;
+  text-decoration:underline;
+}
+
+a.search, a.search:visited {
+  display:inline-block;
+  width:115px;
+  height:28px;
+  background:#4F8DB2;
+  color:#fff;
+}
+
+/* add by H.nguyen */
+#filterEvent{
+  position: relative;
+  top: -50px;
+}
+
+.event-list {
+  width:520px;
+}
+.event-list .hr {
+  clear:none;
+}
+
+.event-list .list-view-block {
+  margin-bottom: 10px;
+}
+
+.event-filter-wrap{
+  width: 210px;
+}
+
+.event-filter .filter-keyword input{
+  width:174px;
+}
+
+.event-filter .filter-date div.pickerWrapper_Default > table{
+  width: 143px !important;
+}
+
+.event-filter .filter-type,
+.event-filter .filter-accessibility
+{
+  width: 180px;
+  margin: 10px 0;
+}
+
+.event-filter .check-list-content,
+.event-filter .check-list-content table{
+  width: 178px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<title>Greater Bendigo City Council - Home</title>
+
+<!-- CSS INCLUDES -->
+<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="site.css" media="all" />
+<link type="text/css" rel="stylesheet" href="table-style.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="community-directory.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="employment.css" media="screen" />
+
+<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+<!-- JS INCLUDES -->
+<script>
+
+$(document).ready(function() {
+	$(".toggle-header th").attr("rel","off");
+	$(".toggle-header tr:not(.row-header)").addClass("hidden");
+	
+	$(".toggle-header th").click(function() {
+		if($(this).attr("rel")==null||$(this).attr("rel")=="") {
+			$(this).parents("table.toggle-header").find("tr:not(.row-header)").addClass("hidden");
+			$(".toggle-header th").attr("rel","off");
+		}		
+		else {
+			$(this).parents("table.toggle-header").find("tr:not(.row-header)").removeClass("hidden");
+			$(".toggle-header th").attr("rel","");
+		}
+	});
+});
+</script>
+
+</head>
+
+<!--BODY START -->
+<body>
+<div class="page-wrap">
+	<!--DynamicContentArea-->
+	<div class="fadded-background">
+		<div class="container header-wrap">
+			<div class="header">
+				<div class="header-link">
+					<div>
+						<a href="#">Accessibility</a> | 
+						<a href="#">Font Size</a> | 
+						<a href="#">Contact Us</a> |
+						<a href="#">Print</a> |
+						<a href="#">Email</a> &nbsp;&nbsp;&nbsp;
+						<select>
+						<option>Public site</option>
+						<option>Public site</option>
+						</select>
+					</div>
+					<div class="search-box" >
+					<div class="right"><a id="btn_search" href="#"></a></div>
+					  <input type="text" value="I'm looking for..." />
+						
+					</div>
+				</div>
+			</div> <!-- Header -->
+			<div class="clear"></div>
+		</div>
+		
+		<div class=container>
+			<div class="menu">
+			<a href="#"><img src="icon_house.gif" /></a> | <a href="#">About Us</a> | 
+			<a href="#">Leisure & Entertainment</a>  | <a href="#">Business</a>
+			<a href="#">Environment</a>  | <a href="#">Employment</a> | 
+			<a href="#">News</a> | <a href="#">Contact Us</a>
+			</div>
+		</div>
+		
+		<div class=container>
+			<div class="breadcrumb">
+			You are here: <a href="#">&gt; Home</a>  <a href="#"> &gt; About Us</a>  
+			<a href="#">&gt; Leisure &amp; Entertainment</a>  <a href="#">&gt; Business</a>
+			<a href="#">&gt; Environment</a> <a href="#">&gt; Employment</a>
+			</div>
+		</div>
+		
+		<div class="container"> 
+			<div class="middle">
+				<!--Content-->
+				
+				<div class="left-nav-wrap">
+					<div class="side-menu">
+						<h2>In this section</h2>
+						<ul>
+							<li><a href="#">Bendigo Regional Archives Centre</a></li>
+							<li><a href="#">Libraries</a></li>
+							<li><a href="#">Parks, Gardens and Reserves</a></li>
+							<li><a href="#">Long long name for this section lorem ipsum dolor isup</a></li>
+							<li><a href="#">Bin collection days</a></li>
+							<li><a href="#">Bin collection days</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="middle-content">
+					<div class="middle-column-1">
+						<div style="padding: 0px 10px;">
+						<h1>[Position Name]</h1>
+						<h3>Current vacancies</h3>
+						<p>
+						Body Content<br />
+							<p>
+							Reference Number:325<br />
+							Closing Date: 22/08/2011
+							</p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque, 
+							tortor id eleifend molestie, tortor urna fermentum odio, eu pharetra purus est 
+							eu ligula. Quisque sapien nibh, mollis in laoreet vitae, ullamcorper sit amet lacus. 
+							Maecenas sagittis suscipit lacus a posuere. Donec sed sapien eget sapien tempor 
+							volutpat. Nulla ultricies orci sed erat hendrerit molestie. Morbi diam nibh, 
+							fringilla in blandit et, tristique sed est. Proin sollicitudin ullamcorper urna, 
+							non tempor lacus vulputate at. Curabitur vestibulum interdum euismod. 
+							Cras nec nibh nunc.
+						</p>
+						</div>
+						
+						<table class="blue-style toggle-header">
+							<tr class="row-header">
+								<th colspan="2">1. Details of Advertised Position</th>
+							</tr>
+							<tr>
+								<td class="first">Position title</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Closing date for applications</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td rowspan="5">Where did you first see details of the advertised position?</td>
+								<td class="light"><input type="checkbox" /> The Age
+										
+									
+								</td>
+							</tr>
+							<tr>
+								<td class="light" ><input type="checkbox" /> COBG Website</td>
+							</tr>
+							<tr>
+								<td class="light" ><input type="checkbox" /> Bendigo Advertiser</td>
+							</tr>
+							<tr>
+								<td class="light"><input type="checkbox" /> Seek.com</td>
+							</tr>
+							<tr>
+								<td class="light"><input type="checkbox" /> Word of Mouth</td>
+							</tr>
+							
+							<tr>
+								<td>If other Job Board Please Specify</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr class="row-header">
+								<th colspan="2">2. Your details</th>
+							</tr>
+							<tr>
+								<td class="first">Title</td>
+								<td class="light">
+								<select>
+									<option></option>
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Miss</option>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Last Name</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>First Name</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Home Address</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>State</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Suburb</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Post Code</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr class="row-header">
+								<th colspan="2">Contact Details</th>
+							</tr>
+							<tr>
+								<td class="first">Phone (Work)</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Phone (Home)</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Mobile</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr>
+								<td>Are you an Australian or New Zealand Citizen or have Permanent resident status?</td>
+								<td class="light">
+									<select>
+										<option></option>
+										<option>Yes</option>
+										<option>No</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>If No, do you have a Valid Working Visa?</td>
+								<td class="light">
+									<select>
+										<option></option>
+										<option>Yes</option>
+										<option>No</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Visa Expiry Date</td>
+								<td class="light">
+									<input /> <img />
+								</td>
+							</tr>
+							<tr class="row-header">
+								<th colspan="2">3. Your Employment Information</th>
+							</tr>
+							<tr>
+								<td class="first">Are you currently employed by City of Greater Bendigo?</td>
+								<td class="light">
+									<select>
+										<option></option>
+										<option>Yes</option>
+										<option>No</option>
+									</select></td>
+							</tr>
+							<tr>
+								<td class="first">Are you currently employed by another Local Government Authority?</td>
+								<td class="light">
+									<select>
+										<option></option>
+										<option>Yes</option>
+										<option>No</option>
+									</select></td>
+							</tr>
+							<tr>
+								<td>If yes, which Local Government Authority?</td>
+								<td class="light"><input /></td>
+							</tr>
+							<tr class="row-header">
+								<th colspan="2">4. Your Checklist</th>
+							</tr>
+							<tr>
+								<td class="first">Your cover letter</td>
+								<td class="light">
+									<input type="file" /></td>
+							</tr>
+							<tr>
+								<td class="first">Your resume</td>
+								<td class="light">
+									<input type="file" /></td>
+							</tr>
+							<tr>
+								<td class="first">Statement addressing the Key Selection Criteria</td>
+								<td class="light">
+									<input type="file" /></td>
+							</tr>
+						</table>
+						
+						<a href="#">Submit</a>
+						
+						<p>Updated:11:29: AM, 1 August 2011</p>
+					</div>
+					<div class="middle-column-2">
+						<div class="employment-filter">
+							<h2>Employment Type</h2>
+							<ul>
+								<li><input type="checkbox" /> Full time</li>
+								<li><input type="checkbox" /> Part time</li>
+								<li><input type="checkbox" /> Casual</li>
+							</ul>
+						</div>
+						<a class="search" href="#">Search &gt;</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div> <!-- container-->			
+		</div>
+		
+		<!-- FOOTER -->
+		<div class="container dark"> 
+			<div class="footer">
+				<div class="footer-box" style="">
+					<div class="column-1">
+					<h2>Contact us</h2>
+						<div class="subcolumn">
+							<p>Main Office: <br />
+							195 - 229 Lyttleton Terrance<br />
+							Bendigo Victoria 3552
+							</p>
+							
+							<p>Postal Address: <br />
+							PO Box 733	<br />
+							Bendigo Victoria 3552
+							</p>	
+						</div>
+						<div class="subcolumn">
+							<p>
+							Telephone: (+61 3) 5434 6000 <br />
+							Fax: (+61 3) 5434 6200<br />
+							<p></p>
+							<br>
+							Email: <a href="mailto:requests@bedigo.vic.gov.au">requests@bedigo.vic.gov.au</a>
+							</p>
+						</div>			
+					</div>
+					
+					<div class="column-2">
+						<h2>Visit our other sites</h2>
+						<div class="subcolumn-2">
+							<ul>
+							  <li><a href="#">Bendigo Art Gallery</a></li>
+							  <li><a href="#">Bendigo Tourism</a></li>
+							  <li><a href="#">Business Bendigo</a></li>
+							  <li><a href="#">Business Events Bendigo</a></li>
+							</ul>
+						</div>
+						<div class="subcolumn-2">
+							<ul>
+								<li><a href="#">Child Friendly City</a></li>
+							  <li><a href="#">Goldfields Library</a></li>
+							  <li><a href="#">The Capital Theatre</a></li>
+							  <li><a href="#">YO Youth Bendigo</a></li>
+							</ul>
+							
+							<br /><br />
+							
+							<div class="function-link">
+							<a href="#" id="link-fb"></a>
+							<a href="#" id="link-rss"></a>
+							<a href="#" id="link-tweet"></a>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>	
+				<div class="clear"></div>
+			</div> <!-- Footer -->
+		</div> 
+		<div class="footer-link" style="">
+			<a href="#">Disclaimer</a> | <a href="#">Sitemap</a> | 
+			<a href="#">Privacy Information</a> | <a href="#">Contact Us</a> | 
+			<a href="#">About this Site</a> | <a href="#">Text Only</a> | 
+			<a href="#">A-Z Index</a>
+		</div>	
+		
+	</div> 
+	<!--/DynamicContentArea-->
+</div>
+</body>
+<!--BODY END -->
+</html>

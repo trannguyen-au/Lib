@@ -94,3 +94,15 @@
 		opacity:1; 
 		/* Customizable */
 	}
+	
+	div#wn_pre a, div#wn_pre a:visited, div#wn_next a, div#wn_next a:visited {
+		display:block;width:100%;height:100%;
+	}
+	
+	div#wn_pre a:hover {
+		background: url('prevlabel.gif') left 20px no-repeat;
+	}
+	
+	div#wn_next a:hover {
+		background: url('nextlabel.gif') right 20px no-repeat;
+	}

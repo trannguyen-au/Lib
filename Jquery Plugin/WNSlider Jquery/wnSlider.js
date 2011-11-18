@@ -1,5 +1,5 @@
 /**
-*   WN Slider v1.0
+*   WN Slider v1.2
 *   Copyright (C) 2011 Wery Nguyen
 *	nguyennt86@gmail.com
 *   Seamless CMS	
@@ -11,7 +11,8 @@ $.fn.wnSlider = function(options) {
     // Set default variables in an array
     var defaults = {
 	    style : "wn-slider",
-		pagingType : "number", // "image" // need to have the appropriate css for the image paging type
+		pagingType : "number", // "image" // "none" // need to have the appropriate css for the image paging type, default value is number
+		pagingNavigation: true,
         timerInterval: 60000,
 		animationSpeed: 500,
 		effect: "fade", // none
@@ -50,18 +51,20 @@ $.fn.wnSlider = function(options) {
 		}
 		
 		// setup the pager
-		for(var i=0;i<imageList.length;i++) {
-			var content = (i+1);
-			if(options.pagingType=="image") {
-				content = "&nbsp;";
+		if(options.pagingType!="none") {
+			for(var i=0;i<imageList.length;i++) {
+				var content = (i+1);
+				if(options.pagingType==="image") {
+					content = "&nbsp;";
+				}
+				
+				if(i!=currentIndex) {
+						$("#wn_pager").append("<div class='wn-pager-item' title='"+i+"'>"+content+"</div>");
+					}
+					else {
+						$("#wn_pager").append("<div class='wn-pager-item active' title='"+i+"'>"+content+"</div>");
+					}
 			}
-			
-			if(i!=currentIndex) {
-					$("#wn_pager").append("<div class='wn-pager-item' title='"+i+"'>"+content+"</div>");
-				}
-				else {
-					$("#wn_pager").append("<div class='wn-pager-item active' title='"+i+"'>"+content+"</div>");
-				}
 		}
 		
 		// handle the pager click event
@@ -78,23 +81,37 @@ $.fn.wnSlider = function(options) {
 			else currentIndex--;
 			run();
 		});
+		
+		// pager navigation
+		if(options.pagingNavigation===true) {
+			container.append("<div id='wn_pre' style='position:absolute; left:0px; width:50%; height:100%;'><a href='#'></a></div>");
+			container.append("<div id='wn_next' style='position:absolute; right:0px; width:50%; height:100%;'><a href='#'></a></div>");
+			
+			$("div#wn_pre a").click(function() {
+				if(currentIndex===0)
+					currentIndex = imageList.length-1;
+				else 
+					currentIndex--;
+				
+				showCurrentImage();
+			});
+			
+			$("div#wn_next a").click(function() {
+				if(currentIndex===imageList.length-1)
+					currentIndex = 0;
+				else 
+					currentIndex++;
+					
+				showCurrentImage();
+			});
+		}
 	}
 	
-	// this function will run after each interval to slide the image
-	function run() {
-		// find the next image to be displayed
-		var nextImage = 0;
-		if(currentIndex!=imageList.length-1) {
-			nextImage = ++currentIndex;
-		}
-		else {
-			currentIndex = 0;
-		}
-		
+	function showCurrentImage() {
 		var src = imageList[currentIndex].src;
 		var title = imageList[currentIndex].title;
 		
-		if(options.effect=="fade") { // using fade effect
+		if(options.effect==="fade") { // using fade effect
 			$("#wn_image").fadeOut(options.animationSpeed, function() {
 				$("#wn_image").html("<img src='"+src+"' width='100%' height='100%' />");
 				$("#wn_image").fadeIn();
@@ -109,6 +126,20 @@ $.fn.wnSlider = function(options) {
 		// change pager style
 		$("#wn_pager div").removeClass("active");
 		$("#wn_pager div[title=\""+currentIndex+"\"]").addClass("active");
+	}
+	
+	// this function will run after each interval to slide the image
+	function run() {
+		// find the next image to be displayed
+		var nextImage = 0;
+		if(currentIndex!=imageList.length-1) {
+			nextImage = ++currentIndex;
+		}
+		else {
+			currentIndex = 0;
+		}
+		showCurrentImage();
+		
 	}
 	
 	return this.each(function() {

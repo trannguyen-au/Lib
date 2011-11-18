@@ -9,11 +9,20 @@
 <script type="text/javascript"> 
 $(document).ready(function() {
 	// load the map when the document load up
-	$("#map_canvas").wnGoogleMap({address:$("#address").val()});
+	
+	$("#map_canvas").wnGoogleMap({
+		address:$("#address").val(),
+		searchBy: "both",
+		latlng: "-37.6347969122054,145.130459798335",
+	});
 	
 	// refresh the map when search button clicked
 	$("#btnSearch").click(function() {
-		$("#map_canvas").wnGoogleMap({address:$("#address").val()});
+		$("#map_canvas").wnGoogleMap({
+			address:"24-30 Ashley Road Yarrambat 3091 Australia",
+			searchBy: "both",
+			latlng: "-37.6347969122054,145.130459798335",
+		});
 	});
 	
 });
@@ -22,9 +31,9 @@ $(document).ready(function() {
 </head> 
 <body> 
   <div> 
-    <input id="address" type="textbox" value="111 queensbridge street south melbourne australia"> 
+    <input id="address" type="textbox" value="24-30 Ashley Road Yarrambat 3091 Australia"> 
     <input id="btnSearch" type="button" value="Search" > 
   </div> 
-<div id="map_canvas" style="height:90%;top:30px"></div> 
+<div id="map_canvas" style="height:90%;top:30px" rel="24-30 Ashley Road Yarrambat 3091 Australia"></div> 
 </body> 
 </html> 

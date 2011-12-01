@@ -16,7 +16,7 @@ $.fn.wnSlider = function(options) {
         timerInterval: 60000,
 		animationSpeed: 500,
 		effect: "fade", // none
-		autoRotate: true,
+		autoRotate: true
     };
 
 	var timer;

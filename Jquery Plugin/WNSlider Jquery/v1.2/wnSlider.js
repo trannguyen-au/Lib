@@ -1,5 +1,5 @@
 /**
-*   WN Slider v1.2
+*   WN Slider v1.3
 *   Copyright (C) 2011 Wery Nguyen
 *	nguyennt86@gmail.com
 *   Seamless CMS	
@@ -16,7 +16,9 @@ $.fn.wnSlider = function(options) {
         timerInterval: 60000,
 		animationSpeed: 500,
 		effect: "fade", // none
-		autoRotate: true
+		autoRotate: true,
+		
+		pagingPosition: 'below-image' // 'below-image'  // from 1.3
     };
 
 	var timer;
@@ -35,7 +37,12 @@ $.fn.wnSlider = function(options) {
 	// this function will run once to start up the control
 	function init() {
 		// add a new div container after the main div
-		container.append("<div id='wn_pager'></div>");
+		if(options.pagingPosition=='above-image') {
+			container.append("<div id='wn_pager'></div>");
+		}
+		else {
+			container.after("<div id='wn_pager'></div>");
+		}
 		container.append("<div id='wn_image'></div>");
 		container.append("<div id='wn_title_background'></div>");
 		container.append("<div id='wn_title'></div>");

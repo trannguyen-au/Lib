@@ -70,7 +70,7 @@ $.fn.wnSlider = function(options) {
 			var subTitle = firstItem.attr("alt");//imageList[currentIndex].alt!=null ? imageList[currentIndex].alt : "";
 			
 			$("#wn_image").append("<a href='"+link+"'><img src='"+src+"' width='100%' height='100%' /></a>");
-			$("#wn_title").append("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <span>"+subTitle+"</span> </div>");
+			$("#wn_title").append("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <div>"+subTitle+"</div> </div>");
 		}
 		//showCurrentImage();
 		
@@ -189,7 +189,7 @@ $.fn.wnSlider = function(options) {
 			});
 			
 			$("#wn_title").fadeOut(options.animationSpeed, function() {
-				$("#wn_title").html("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <span>"+subTitle+"</span> </div>");
+				$("#wn_title").html("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <div>"+subTitle+"</div> </div>");
 				$("#wn_title").fadeIn();
 			});
 			
@@ -200,7 +200,7 @@ $.fn.wnSlider = function(options) {
 		}
 		else if(options.effect==="none"){ // just make it display
 			$("#wn_image").html("<a href='"+link+"'><img src='"+src+"' width='100%' height='100%' /></a>");
-			$("#wn_title").html("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <span>"+subTitle+"</span> </div>");
+			$("#wn_title").html("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <div>"+subTitle+"</div> </div>");
 		}
 		
 		// change pager style

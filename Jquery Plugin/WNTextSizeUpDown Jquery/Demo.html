@@ -1,0 +1,65 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="wnTextSizeUpDown.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#textSizeChange").wnTextSizeUpDown({
+				selector: ["p",".text-size"],
+				effect:true
+			});
+			
+		});
+	</script>
+	
+	<style>
+	
+	body {
+		font-family: Arial;
+		background: #FFFFF;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	
+	pre {
+		background: #ddd;
+		border-radius: 5px;
+		padding:10px;
+	}
+	</style>
+	
+</head>
+
+<body>
+	<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff; border:1px solid #ddd; padding:10px;">
+	<h1>WNTextSizeUpDown Jquery Plugin v1.0</h1>
+	<div id="textSizeChange"></div>
+	<div id="textSizeChange2"></div>
+	<p>Can you change this p tag size?</p>
+	<span>This is a span tag</span>
+	<div class="text-size">This is a div, class = "text-zize"</div>
+	<table id="text_table">
+		<tr><td>This is a content inside a table with id = test_table</td></tr>
+	</table>
+	
+	<h1>Usage:</h1>
+	<pre>
+$(document).ready(function() {
+	$("#textSizeChange").wnTextSizeUpDown({option:value});
+});
+
+[option]		: [value]
+---------------------------------------------
+selector 		: ["body"],  // an array of jquery selector on which text-size will be changed, eg: ["div", "#largerText", "input[type='text']"] ....
+largerText		: "Larger Size",  // text to be displayed for larger text trigger
+smallerText		: "Smaller Size",  // text to be displayed for smaller text trigger
+seperator		: "|",			// seperator between the 2 link buttons
+times			: 5		// number of times that the font-size can be increased
+		
+	</pre>
+	</div>
+</body>
+</html>

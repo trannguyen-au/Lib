@@ -1,22 +1,21 @@
 /**
-*   WN Slider v1.3.1
+*   WN Slider v1.3
 *   @copyright (C) 2011 Wery Nguyen
 *	@author nguyennt86@gmail.com
 *   Seamless CMS	
 *	Change Log:
-*	@version v1.3.1	13/12/2011
-*		+ Quick fix an error cause js to stop if rel or alt are not specified for the image.
-*	@version v1.3	2/12/2011
-*		+ Add pagingPosition below image option which show the paging below the images. Has prev/next/pause button wrap around the normal paging number
-*		+ Add below-image css. refer to the stylesheet for more updated on styling (reuse a few components from jquery ui smoothless theme)
-*		+ Ability to display title and abstract on the slider, add hyperlink to image and title <img src="link/to/src" title="the title" alt="the subtitle" rel="link to page" />
-*	@version v1.2	17/11/2011
-*		+ Add PagingNavigation & effect
-*	@version v1.1	4/11/2011
-*		+ Add more configuration: pagingType can be an image or none
-*		+ Auto Rotate?
-*		+ Styling fix for IE6
-*	@version 1.0	20/10/2011
+	@version v1.4	WIP
+	@version v1.3	2/12/2011
+		+ Add pagingPosition below image option which show the paging below the images. Has prev/next/pause button wrap around the normal paging number
+		+ Add below-image css. refer to the stylesheet for more updated on styling (reuse a few components from jquery ui smoothless theme)
+		+ Ability to display title and abstract on the slider, add hyperlink to image and title <img src="link/to/src" title="the title" alt="the subtitle" rel="link to page" />
+	@version v1.2	17/11/2011
+		+ Add PagingNavigation & effect
+	@version v1.1	4/11/2011
+		+ Add more configuration: pagingType can be an image or none
+		+ Auto Rotate?
+		+ Styling fix for IE6
+	@version 1.0	20/10/2011
 */
 
 (function($){ 
@@ -24,15 +23,21 @@ $.fn.wnSlider = function(options) {
 
     // Set default variables in an array
     var defaults = {
-	    style : "wn-slider",
-		pagingType : "number", // "image" // "none" // need to have the appropriate css for the image paging type, default value is number
+	    style 			: "wn-slider",
+		pagingType 		: "number", // "image" // "none" // need to have the appropriate css for the image paging type, default value is number
 		pagingNavigation: true,
-        timerInterval: 6000,
-		animationSpeed: 500,
-		effect: "fade", // none
-		autoRotate: true,
+        timerInterval	: 60000,
+		animationSpeed	: 500,
+		effect			: "fade", // none
+		autoRotate		: true,
 		
-		pagingPosition: 'below-image' // 'below-image','above-image'  // from 1.3
+		pagingPosition	: 'above-image', // 'below-image','above-image'  // from 1.3
+		
+		// from 1.4 add menu control to the slider
+		showMenu		: true,
+		menuPosition	: "left",	// left or right
+		maxItemOnMenu	: 4
+		
     };
 
 	var timer;
@@ -62,20 +67,8 @@ $.fn.wnSlider = function(options) {
 		container.append("<div id='wn_title'></div>");
 		container.children("img").css("display","none");
 		
-		
-		// select the first image and display it
-		if(imageList.length>0) {
-			
-			var firstItem = imageList.first();
-			var src = firstItem.attr("src");
-			var title = firstItem.attr("title");
-			var link = firstItem.attr("rel")==null? "" : firstItem.attr("rel");//imageList[currentIndex].attr('rel')!=null ? imageList[currentIndex].attr('rel') : "#";
-			var subTitle = firstItem.attr("alt")==null? "":firstItem.attr("alt");//imageList[currentIndex].alt!=null ? imageList[currentIndex].alt : "";
-			
-			$("#wn_image").append("<a href='"+link+"'><img src='"+src+"' width='100%' height='100%' /></a>");
-			$("#wn_title").append("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <div>"+subTitle+"</div> </div>");
-		}
 		//showCurrentImage();
+		showFirstItem();
 		
 		// setup the pager
 		if(options.pagingType!="none") {
@@ -175,14 +168,73 @@ $.fn.wnSlider = function(options) {
 					return false;
 				});
 			}
+			else if(option.pagingPosition=="none") {
+				
+			}
+		}
+		
+		// menu option 
+		if(options.showMenu) {
+			
+			// wrap the main slider into a div with the float style opposite the position of the menu
+			if(options.menuPosition=="left") {
+				container.wrap("<div class='right' />");
+			}
+			else if(options.menuPosition=="right") {
+				container.wrap("<div class='left' />");
+			}
+		
+			var menuHtml = "<ul class='layout-list wn-slider-menu-list "+options.menuPosition+"' id='wn_slider_menu_list'></ul>";
+			container.parent("div").before(menuHtml);
+			
+			// add li to each image item on the right base on the maximum item
+			
+			//var countMenuItem = options.maxItemOnMenu > imageList.length?imageList.length:options.maxItemOnMenu;
+			
+			// get the height of the area
+			//var posibleHeight = parseInt(container.css("height"))/countMenuItem;
+			for(var i=0; i<imageList.length; i++) {
+				var liHtml = "<li><a href='#' rel='"+i+"'>"+imageList[i].title+"</a></li>"; // get the title of the image to display on the menu
+				var liHtmlActive = "<li><a href='#' class='active' rel='"+i+"'>"+imageList[i].title+"</a></li>"; // active item
+				if(i==currentIndex) {
+					$("#wn_slider_menu_list").append(liHtmlActive);
+				}
+				else {
+					$("#wn_slider_menu_list").append(liHtml);
+				}
+			}
+			
+			$("#wn_slider_menu_list a").click(function() {
+				// show the item that is related to the link
+				var targetItemIndex = parseInt($(this).attr('rel'));
+				currentIndex = targetItemIndex;
+				showCurrentImage();
+				
+				return false;
+			});
+		}
+	}
+	
+	function showFirstItem() {
+		// select the first image and display it. This method is for the first load of the plugin 
+		if(imageList.length>0) {
+			
+			var firstItem = imageList.first();
+			var src = firstItem.attr("src");
+			var title = firstItem.attr("title");
+			var link = firstItem.attr("rel");//imageList[currentIndex].attr('rel')!=null ? imageList[currentIndex].attr('rel') : "#";
+			var subTitle = firstItem.attr("alt");//imageList[currentIndex].alt!=null ? imageList[currentIndex].alt : "";
+			
+			$("#wn_image").html("<a href='"+link+"'><img src='"+src+"' width='100%' height='100%' /></a>");
+			$("#wn_title").html("<div id='wn_title_label'><a href='"+link+"' class='wn_title_header'>"+title+"</a> <div>"+subTitle+"</div> </div>");
 		}
 	}
 	
 	function showCurrentImage() {
 		var src = imageList[currentIndex].src;
 		var title = imageList[currentIndex].title;
-		var link = imageList[currentIndex].attributes['rel']!=null ? imageList[currentIndex].attributes['rel'].value : "";
-		var subTitle = imageList[currentIndex].alt!=null ? imageList[currentIndex].alt : "";
+		var link = imageList[currentIndex].attributes['rel'].value;
+		var subTitle = imageList[currentIndex].alt;//imageList[currentIndex].alt!=null ? imageList[currentIndex].alt : "";
 		
 		
 		if(options.effect==="fade") { // using fade effect
@@ -209,6 +261,10 @@ $.fn.wnSlider = function(options) {
 		// change pager style
 		$("#wn_pager a").removeClass("active");
 		$("#wn_pager a[title=\""+currentIndex+"\"]").addClass("active");
+		
+		// change the menu style
+		$("#wn_slider_menu_list a").removeClass("active");
+		$("#wn_slider_menu_list a[rel=\""+currentIndex+"\"]").addClass("active");
 	}
 	
 	// this function will run after each interval to slide the image
@@ -224,6 +280,8 @@ $.fn.wnSlider = function(options) {
 		showCurrentImage();
 		
 	}
+	
+	
 	
 	return this.each(function() {
 		init();

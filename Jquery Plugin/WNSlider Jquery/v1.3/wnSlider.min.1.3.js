@@ -1,0 +1,22 @@
+/**
+*   WN Slider v1.3.1
+*   @copyright (C) 2011 Wery Nguyen
+*	@author nguyennt86@gmail.com
+*   Seamless CMS	
+*	Change Log:
+*	@version v1.3.1	13/12/2011
+*		+ Quick fix an error cause js to stop if rel or alt are not specified for the image.
+*	@version v1.3	2/12/2011
+*		+ Add pagingPosition below image option which show the paging below the images. Has prev/next/pause button wrap around the normal paging number
+*		+ Add below-image css. refer to the stylesheet for more updated on styling (reuse a few components from jquery ui smoothless theme)
+*		+ Ability to display title and abstract on the slider, add hyperlink to image and title <img src="link/to/src" title="the title" alt="the subtitle" rel="link to page" />
+*	@version v1.2	17/11/2011
+*		+ Add PagingNavigation & effect
+*	@version v1.1	4/11/2011
+*		+ Add more configuration: pagingType can be an image or none
+*		+ Auto Rotate?
+*		+ Styling fix for IE6
+*	@version 1.0	20/10/2011
+*/
+
+eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(9($){$.83.92=9(6){7 73={59:"32-91",55:"85",72:58,51:87,44:90,66:"71",75:58,38:\'26-17\'};7 19;6=$.88(73,6);7 20=$(28);7 8=$(28).89("35");7 4=0;9 79(){5(6.38==\'74-17\'){20.11("<3 10=\'15\'></3>")}13 5(6.38=="26-17"){20.93("<3 10=\'15\' 18=\'26-17\'></3>")}20.11("<3 10=\'30\'></3>");20.11("<3 10=\'64\'></3>");20.11("<3 10=\'33\'></3>");20.57("35").86("84","67");5(8.21>0){7 23=8.94();7 16=23.25("16");7 12=23.25("12");7 22=23.25("43")==27?"":23.25("43");7 42=23.25("47")==27?"":23.25("47");$("#30").11("<2 14=\'"+22+"\'><35 16=\'"+16+"\' 34=\'100%\' 39=\'100%\' /></2>");$("#33").11("<3 10=\'65\'><2 14=\'"+22+"\' 18=\'53\'>"+12+"</2> <3>"+42+"</3> </3>")}5(6.55!="67"){96(7 24=0;24<8.21;24++){7 45=(24+1);5(6.55==="17"){45="&102;"}5(24!=4){$("#15").11("<2 18=\'32-36-40\' 12=\'"+24+"\'>"+45+"</2>")}13{$("#15").11("<2 18=\'32-36-40 41\' 12=\'"+24+"\'>"+45+"</2>")}}}$("#15").57("2").29(9(){$("#15").57("2").56("41");$(28).60("41");5(19!=27){81(19);19=54(37,6.51)}4=$(28).25(\'12\');5(4==0)4=8.21-1;13 4--;37()});5(6.72===58){5(6.38=="74-17"){20.11("<3 10=\'52\' 59=\'68:69; 103:76; 34:50%; 39:100%;\'><2 14=\'#\'></2></3>");20.11("<3 10=\'46\' 59=\'68:69; 101:76; 34:50%; 39:100%;\'><2 14=\'#\'></2></3>");$("3#52 2").29(9(){5(4===0)4=8.21-1;13 4--;31()});$("3#46 2").29(9(){5(4===8.21-1)4=0;13 4++;31()})}13 5(6.38=="26-17"){$(\'#15\').95("<2 10=\'52\' 18=\'26-17 32-36-40\' 14=\'#\'></2>");$(\'#15\').11("<2 10=\'46\' 18=\'26-17 32-36-40\' 14=\'#\'></2>");$(\'#15\').11("<2 10=\'77\' 18=\'26-17 32-36-40\' 14=\'#\'></2>");$("#52").29(9(104){5(4===0)4=8.21-1;13 4--;31();49 61});$("#46").29(9(){5(4===8.21-1)4=0;13 4++;31();49 61});$("#77").29(9(){5(19!=27){81(19);19=27;$(28).60(\'70-80\')}13{19=54(37,6.51);$(28).56(\'70-80\')}49 61})}}}9 31(){7 16=8[4].16;7 12=8[4].12;7 22=8[4].78[\'43\']!=27?8[4].78[\'43\'].99:"";7 42=8[4].47!=27?8[4].47:"";5(6.66==="71"){$("#30").62(6.44,9(){$("#30").48("<2 14=\'"+22+"\'><35 16=\'"+16+"\' 34=\'100%\' 39=\'100%\' /></2>");$("#30").63()});$("#33").62(6.44,9(){$("#33").48("<3 10=\'65\'><2 14=\'"+22+"\' 18=\'53\'>"+12+"</2> <3>"+42+"</3> </3>");$("#33").63()});$("#64").62(6.44,9(){$("#64").63()})}13 5(6.66==="67"){$("#30").48("<2 14=\'"+22+"\'><35 16=\'"+16+"\' 34=\'100%\' 39=\'100%\' /></2>");$("#33").48("<3 10=\'65\'><2 14=\'"+22+"\' 18=\'53\'>"+12+"</2> <3>"+42+"</3> </3>")}$("#15 2").56("41");$("#15 2[12=\\""+4+"\\"]").60("41")}9 37(){7 82=0;5(4!=8.21-1){82=++4}13{4=0}31()}49 28.97(9(){79();5(6.75){19=54(37,6.51)}})}})(98);',10,105,'||a|div|currentIndex|if|options|var|imageList|function|id|append|title|else|href|wn_pager|src|image|class|timer|container|length|link|firstItem|i|attr|below|null|this|click|wn_image|showCurrentImage|wn|wn_title|width|img|pager|run|pagingPosition|height|item|active|subTitle|rel|animationSpeed|content|wn_next|alt|html|return||timerInterval|wn_pre|wn_title_header|setInterval|pagingType|removeClass|children|true|style|addClass|false|fadeOut|fadeIn|wn_title_background|wn_title_label|effect|none|position|absolute|pause|fade|pagingNavigation|defaults|above|autoRotate|0px|wn_pause|attributes|init|state|clearInterval|nextImage|fn|display|number|css|6000|extend|find|500|slider|wnSlider|after|first|prepend|for|each|jQuery|value||right|nbsp|left|event'.split('|'),0,{}))

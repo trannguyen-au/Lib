@@ -1,0 +1,5 @@
+set
+.fixDiv {
+ line-height: [x]px;
+}
+<div class="fixDiv">&nbsp;</div>

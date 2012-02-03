@@ -4,6 +4,8 @@
 *	@author nguyennt86@gmail.com
 *   Seamless CMS	
 *	Change Log:
+*	@version v1.3.1	22/12/2011
+*		+ Quick fix display error cause the title background fade to opacity 1 in IE.
 *	@version v1.3.1	13/12/2011
 *		+ Quick fix an error cause js to stop if rel or alt are not specified for the image.
 *	@version v1.3	2/12/2011
@@ -197,7 +199,7 @@ $.fn.wnSlider = function(options) {
 			});
 			
 			$("#wn_title_background").fadeOut(options.animationSpeed, function() {
-				$("#wn_title_background").fadeIn();
+				$("#wn_title_background").fadeTo('normal',0.7);
 			});
 			
 		}

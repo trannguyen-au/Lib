@@ -1,0 +1,114 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	
+	
+	<script type="text/javascript" src="wnMenuSlider.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#menu_slider").wnMenuSlider();
+	});
+	</script>
+	
+	<link type="text/css" rel="stylesheet" href ="jquery-ui-1.8.16.custom.css" />
+	<link type="text/css" rel="stylesheet" href ="wnMenuSlider.css" /> 
+	
+	<style>
+	
+	body {
+		font-family: Arial;
+		background: #FFFFF;
+		font-size:12px;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	
+	pre {
+		background: #ddd;
+		border-radius: 5px;
+		padding:10px;
+		width:940px;
+	}
+	</style>
+</head>
+
+<body>
+<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff; border:1px solid #ddd; padding:10px;">
+	<h1>WNMenuSlider JQuery Plugin v1.0</h1>
+	<div style="float:left">
+	
+	<h3>This is a demo of WNMenuSlider Jquery plugin. </h3>
+	<div class="clear"></div>
+	<div style="float:left;">
+		<div id="menu_slider" class="wnMenuSlider">
+			<div class="menu-text-wrap">
+				<a class="menu-text"><div class="menu-text-padding">First item menu</div></a>
+				<img src="1.jpg" title="1.jpg" alt="This is testing image 1" rel="http://www.yahoo.com">
+				
+				<a class="menu-text"><div class="menu-text-padding">2nd item menu</div></a>
+				<img src="2.jpg" title="2.jpg" alt="This is testing image 2" rel="http://www.yahoo.com">
+				
+				<a class="menu-text"><div class="menu-text-padding">3rd item menu</div></a>
+				<img src="3.jpg" title="3.jpg" alt="This is testing image 3" rel="http://www.yahoo.com">
+				
+				<a class="menu-text"><div class="menu-text-padding">4th item menu</div></a>
+				<img src="4.jpg" title="4.jpg" alt="This is testing image 4" rel="http://www.yahoo.com">
+				
+			</div>
+		</div>
+	</div>
+		
+	<div class="clear"></div>	
+	
+	<h3>
+	the options available are:</h3>
+	<pre>
+	
+$(document).ready(function() {
+	$("#slider").wnMenuSlider({
+		[option] : [value]
+	});
+});
+	
+OPTION - VALUE PAIRS :
+defaults = {
+	pagingType : "number", // "image" // "none" // need to have the appropriate css for the image paging type
+	timerInterval: 6000,   // time to switch between each image
+	animationSpeed: 500,   // time for fading animation
+	effect: "fade",        // "none"
+	autoRotate: true,
+};
+	
+	</pre>
+	
+	Html structure: 
+	<pre>
+	
+&lt;div id=&quot;slider&quot; style=&quot;position:relative&quot; class=&quot;wnMenuSlider&quot;&gt;
+	&lt;div class=&quot;menu-text-wrap&quot;&gt;
+		&lt;a class=&quot;menu-text&quot;&gt;&lt;div class=&quot;menu-text-padding&quot;&gt;First item menu&lt;/div&gt;&lt;/a&gt;
+		&lt;img src=&quot;1.jpg&quot; title=&quot;1.jpg&quot; alt=&quot;This is testing image 1&quot; rel=&quot;http://www.yahoo.com&quot;&gt;
+		
+		&lt;a class=&quot;menu-text&quot;&gt;&lt;div class=&quot;menu-text-padding&quot;&gt;2nd item menu&lt;/div&gt;&lt;/a&gt;
+		&lt;img src=&quot;2.jpg&quot; title=&quot;2.jpg&quot; alt=&quot;This is testing image 2&quot; rel=&quot;http://www.yahoo.com&quot;&gt;
+		
+		&lt;a class=&quot;menu-text&quot;&gt;&lt;div class=&quot;menu-text-padding&quot;&gt;3rd item menu&lt;/div&gt;&lt;/a&gt;
+		&lt;img src=&quot;3.jpg&quot; title=&quot;3.jpg&quot; alt=&quot;This is testing image 3&quot; rel=&quot;http://www.yahoo.com&quot;&gt;
+		
+		&lt;a class=&quot;menu-text&quot;&gt;&lt;div class=&quot;menu-text-padding&quot;&gt;4th item menu&lt;/div&gt;&lt;/a&gt;
+		&lt;img src=&quot;4.jpg&quot; title=&quot;4.jpg&quot; alt=&quot;This is testing image 4&quot; rel=&quot;http://www.yahoo.com&quot;&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+	
+	</pre>
+	
+	
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>

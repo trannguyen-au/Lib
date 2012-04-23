@@ -1,18 +1,24 @@
 /**
-*   WN Google Map v1.3
-*   Copyright (C) 2011 Wery Nguyen
+*  WN Google Map v1.4
+*  Copyright (C) 2012 Wery Nguyen
 *  nguyennt86@gmail.com
-*   Seamless CMS
+*  Updated on: 20/4/2012
+*  Seamless CMS
 *   Ref: http://code.google.com/apis/maps/documentation/javascript/overlays.html#OverlaysOverview
 *       http://code.google.com/apis/maps/documentation/javascript/basics.html
-	v1.3 Note:
-	- Add search by: "auto",
-	- Fix bug string.trim() on IE
-*   v1.2 Note: 
+* v1.4 Note:
+  - Add markerImage: link to the customized marker image
+  - disableAll: turn to true to display the map as an image.
+
+* v1.3 Note:
+  - Add search by: "auto",
+  - Fix bug string.trim() on IE
+* v1.2 Note: 
     - Allow user to search by address, longitute/latitute or both.
     - The Marker point to the extract location if longitute and latitute provided.
-  v1.1 Note: 
+* v1.1 Note: 
     - Add info window displaying the input address.
+	- address is get from "rel" attribute of the element
 */
 (function($){ 
 $.fn.wnGoogleMap = function(options) {
@@ -21,10 +27,12 @@ $.fn.wnGoogleMap = function(options) {
     var defaults = {
     searchBy  :  "auto", // "latlng" // "both" // "address" // "auto"
     address   :   "",
-    startLatlng :   "-37.813378,144.961681",
+    startLatlng :   "-37.813378,144.961681", // default start up latlng location
     latlng     :   "",
     zoom     :  15,      // zoom level
-    title    :   ""
+    title    :   "",
+    markerImage : "",
+    disableAll : false
     };
   
   var defaultAddress = "Melbourne CBD, Victoria 3000, Australia";
@@ -69,7 +77,24 @@ $.fn.wnGoogleMap = function(options) {
       zoom: options.zoom,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    
+    if(options.disableAll) {
+      myOptions = { zoomControl : false,
+        scaleControl: false,
+        panControl: false,
+        mapTypeControl : false,
+        overviewMapControl : false,
+        streetViewControl : false,
+        draggable: false,
+        scrollwheel: false,
+        zoom: 15,
+        center: new google.maps.LatLng(-34.397, 150.644),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
     }
+        
+        
     map = new google.maps.Map(document.getElementById(container.attr('id')), myOptions);
     
     // close info window on click to the map
@@ -105,12 +130,22 @@ $.fn.wnGoogleMap = function(options) {
     if (status == google.maps.GeocoderStatus.OK) {
       map.setCenter(results[0].geometry.location);
       
-      var markerPosition = (options.searchBy==="address")?  results[0].geometry.location : latlngInput;
-      
+      var markerPosition = (options.searchBy==="address"
+                            || options.searchBy==="auto"
+                           )?  results[0].geometry.location : latlngInput;
+    if(options.markerImage!="") {
+      marker = new google.maps.Marker({
+        map: map, 
+        position: markerPosition,
+        icon : options.markerImage
+      });
+    }
+    else {
       marker = new google.maps.Marker({
         map: map, 
         position: markerPosition
       });
+    }
       
       if(options.searchBy==="address") {
         infowindow.setContent("<div><h2>"+options.title+"</h2><br>Address: "+addr+"</div>"); 
@@ -128,7 +163,9 @@ $.fn.wnGoogleMap = function(options) {
       
       // show the info window when marker is clicked.
       google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
+        if(!options.disableAll) {
+          infowindow.open(map,marker);
+        }
       });
       
     } else {
@@ -142,4 +179,4 @@ $.fn.wnGoogleMap = function(options) {
   });
   
   };
-})(jQuery);?
+})(jQuery);

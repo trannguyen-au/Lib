@@ -10,12 +10,13 @@
 	</script>
 	
 	<link type="text/css" rel="stylesheet" href ="wnGallery.css" /> 
+	<link type="text/css" rel="stylesheet" href ="jquery.ui.css" /> 
 	
 	<style>
 	
 	body {
 		font-family: Arial;
-		background: #FFFFF;
+		background: #f3f3f3;
 	}
 	
 	.clear {
@@ -31,25 +32,35 @@
 </head>
 
 <body>
-<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff; border:1px solid #ddd; padding:10px;">
+<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:whiteSmoke; border:1px solid #ddd; padding:10px;">
 	<h2>WNSlider JQuery Plugin v1.3</h2>
 	<div style="float:left">
 	
-	This is a demo of WNSlider Jquery plugin. the options available are:
+	This is a demo of WnGallery Jquery plugin. the options available are:
 	<pre>
-	</pre>
-	
-	<pre>
-	
-	
+animationSpeed: 500,
+effect: 	"fade", // 'none', 'slide', 'fade'
+canvasSize: 	{width:392, height:294},
+pagerSize: 	{width:400, height:100},
+pagerImageSize: 136,
+autoRotate:	true,
+timerInterval: 	3000
 	</pre>
 		
+	<pre>
+	
+	
+	</pre>
 	<div style="float:left;">
 		<div id="wn-gallery">
-			<img src="1.jpg" title="1.jpg" alt="This is testing image">
+			<img src="1.jpg" title="1.jpg" class="active" alt="This is testing image">
 			<img src="2.jpg" title="2.png" alt="this is another testing image">
 			<img src="3.jpg" title="Third Image" alt="Lorem ipsum dolor amet">
-			<img src="4.jpg" title="4 Image" alt="Lorem ipsum dolor amet">
+			<img src="4.jpg" title="Third Image" alt="Lorem ipsum dolor amet">
+			<img src="5.jpg" title="Third Image" alt="Lorem ipsum dolor amet">
+			<img src="6.jpg" title="1.jpg" alt="This is testing image">
+			<img src="7.jpg" title="2.png" alt="this is another testing image">
+			
 		</div>
 	</div>
 		

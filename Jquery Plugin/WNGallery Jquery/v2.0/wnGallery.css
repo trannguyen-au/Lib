@@ -9,8 +9,28 @@
   border: 4px solid #000;
 }
 
+.showarea td {
+  background: url("img_bkg.gif")  no-repeat;
+  padding:7px;
+  border:0px; 
+  margin:0px; 
+  vertical-align:middle; 
+  text-align:center;
+}
+
 .showarea img {
-  border: 4px solid #fff;
+  height:292px;
+}
+
+a.img-gallery-pager {
+z-index: 99;
+display: block;
+width: 16px;
+height: 16px;
+background-color: white;
+opacity: 0.7;
+filter: alpha(opacity=0.7);
+float: left;
 }
 
 a.wn-gallery-pager {

@@ -1,0 +1,126 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="wnGallery.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#wn-gallery").wnGallery();
+		//$("#wn-gallery-2").wnGallery();
+	});
+	</script>
+	
+	<link type="text/css" rel="stylesheet" href ="wnGallery.css" /> 
+	<link type="text/css" rel="stylesheet" href ="jquery.ui.css" /> 
+	
+	<style>
+	
+	body {
+		font-family: Arial;
+		background: #f3f3f3;
+		font-size:12px;
+		line-height:16px;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	
+	pre {
+		background: #ddd;
+		border-radius: 5px;
+		padding:10px;
+	}
+	
+	.left {
+  float:left !important;
+  display:inline;
+}
+
+.right {
+  float:right !important;
+  display:inline;
+}
+
+.clear {
+  clear:both; 
+  margin:0px; 
+  padding:0px;
+  display:block;
+}
+	</style>
+</head>
+
+<body>
+<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#272727; border:1px solid #ddd; padding:10px; color: #fff;">
+	<h2>WN Gallery JQuery Plugin v3.0</h2>
+	<div style="float:left">
+	
+	This is a demo of WnGallery Jquery plugin. the options available are:
+	<pre>
+
+	</pre>
+
+	<div style="float:left; width:580px; margin-top:30px;">
+	  <div class="wnGallery noscript clearfix" id="wn-gallery">
+	    <div class="count-info"></div>
+		<div class="gallery-control clearfix">
+		  <div class="left paging-info">6 of 12</div>
+		  <div class="right paging-control">
+		    <a class="pre left" href="#"></a>
+			<a class="play left" href="#"></a>
+			<a class="next left" href="#"></a>
+			<a class="full-screen left" href="#"></a>
+		  </div>
+		</div>
+		<div class="main-image">
+		  
+		</div>
+		<div class="thumbnail-wrap">
+		    <div class="left img-holder"><div class="cover-background">&nbsp;</div><img src="1.jpg" title="1.jpg" alt="This is testing image"></div>
+		    <div class="left img-holder"><div class="cover-background"></div><img src="2.jpg" title="2.png" alt="this is another testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="3.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="4.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="5.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="6.jpg" title="1.jpg" alt="This is testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="7.jpg" title="2.png" alt="this is another testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="2.jpg" title="2.png" alt="this is another testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="3.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="4.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+		</div>
+		
+      </div>
+	</div>
+	
+	<div style="float:left; width:580px; margin-top:30px;">
+	  <div class="wnGallery noscript clearfix" id="wn-gallery-2">
+		<div class="gallery-control clearfix">
+		  <div class="left paging-info">6 of 12</div>
+		  <div class="right">
+		    <a class="pre left" href="#"></a>
+			<a class="play left" href="#"></a>
+			<a class="next left" href="#"></a>
+			<a class="full-screen left" href="#"></a>
+		  </div>
+		</div>
+		<div class="main-image">
+		  
+		</div>
+		<div class="thumbnail-wrap">
+		    <div class="left img-holder"><div class="cover-background"></div><img src="1.jpg" title="1.jpg" alt="This is testing image"></div>
+		    <div class="left img-holder"><div class="cover-background"></div><img src="2.jpg" title="2.png" alt="this is another testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="3.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="4.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="5.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="6.jpg" title="1.jpg" alt="This is testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="7.jpg" title="2.png" alt="this is another testing image"></div>
+		</div>
+		
+      </div>
+	</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>

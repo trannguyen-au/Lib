@@ -1,9 +1,11 @@
 /**
-*   WN Slider v1.3.2
+*   WN Slider v1.4
 *   @copyright (C) 2011 Wery Nguyen
 *	@author nguyennt86@gmail.com
 *   Seamless CMS	
 *	Change Log:
+*	@version v1.4	9/05/2012
+*		+ Add pagingPosition: bottom-right (styling for cambridge library website)
 *	@version v1.3.3	22/12/2011
 *		+ Add target attribute to the link.
 *	@version v1.3.2	22/12/2011
@@ -36,7 +38,9 @@
             effect: "fade", // none
             autoRotate: true,
 
-            pagingPosition: 'below-image' // 'below-image','above-image'  // from 1.3
+            pagingPosition: 'below-image' // 'below-image','above-image'  // from 1.3     'bottom-right'  from 1.4
+			
+			
         };
 
         var timer;
@@ -60,6 +64,9 @@
             }
             else if (options.pagingPosition == "below-image") {
                 container.after("<div id='wn_pager' class='below-image'></div>");
+            }
+			else if (options.pagingPosition == "bottom-right") {
+                container.append("<div id='wn_pager' class='bottom-right'><span class='corner-left'>&nbsp;</span></div>");
             }
             container.append("<div id='wn_image'></div>");
             container.append("<div id='wn_title_background'></div>");

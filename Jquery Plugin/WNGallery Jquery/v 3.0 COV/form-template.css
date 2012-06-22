@@ -1,0 +1,276 @@
+.form_container {
+  padding:15px;
+  background: #F7f7f7;
+}
+
+.form_container .field_row {
+  padding-bottom:10px;
+  margin-bottom:10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.form_container .field_row:after {
+  content: ""; 
+  display: table;
+  clear:both;
+  zoom:1;
+}
+
+.form_container  div.field table tbody tr td input[type="text"]
+{
+  margin-right: 10px;
+}
+
+* html .field_row{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .field_row{
+  min-height: 1%;
+}
+
+.form_container .textbox_row .field input, .form_container .textarea_row .field textarea{
+  width: 380px;
+  border-top: 1px solid #9F9F9F;
+  border-left: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 0px;
+  padding:2px;
+  margin:0px;
+}
+
+.form_container .field table input[type='text'] {
+  width:auto !important;
+}
+
+.form_container .field textarea {
+  height: 60px;
+}
+
+.form_container .field select {
+  width: 200px;
+}
+.form_container .field table, .form_container .checkbox_row .field table, .form_container .matrix_row .field table, .form_container .rank_row .field table  {
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+.pickerWrapper_Default table td {
+  padding:0px!important;
+}
+
+.form_container .field div table td {
+  border:0px;
+  padding:auto;
+}
+
+.form_container .label {
+  float:left;
+  width:300px;
+}
+.form_container .field{
+  float:left;
+  width:400px;
+}
+
+.form_container .checkbox_row .field table td, .form_container .matrix_row .field table td, .form_container .rank_row .field table td {
+  border:0px;
+  background: #F7f7f7;
+}
+
+.form_container .checkbox_row .field table td input {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.form_container .checkbox_row .field table td label {
+  vertical-align: middle; 
+}
+
+.form_container .matrix_row .field table th {
+  background: #f7f7f7;
+  border:0px;
+  color: #333;
+}
+
+.form_container .matrix_row .field table tr:nth-child(n+1) td:nth-child(n+2) {
+  background: #E2E2E2;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+}
+
+.form_container .matrix_row .field td.grey-background {
+  background: #E2E2E2 !important;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+}
+
+
+/* submit button */
+
+.form_container .button-wrap input {
+  background: url("button_arrow_right_bg.gif") right no-repeat;
+  height:23px;
+  color: #fff;
+  padding:0px 20px 0px 10px;
+  border:0px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+/* table style */
+/* header template (contain form name)*/
+.form-container-table .form-container-header {
+  display:none;
+}
+/* table width*/
+.form-container-table table, .form-container-table table td{
+  background: #f7f7f7;
+}
+
+.form-container-table table td {
+  border-bottom:1px dashed #ccc;
+}
+
+.form-container-table table .first {
+  width:300px;
+}
+
+/* label */
+.form-container-table table td.label-row, .form-container-table-grey table td.label-row {
+  background: #fff;
+  font-weight:bold;
+  border-bottom:0px;
+}
+.form-container-table table td input[type='text'], .form-container-table table td textarea {
+  width:100%;
+}
+
+.form-container-table table td textarea {
+  height:60px;
+}
+
+.form-container-table table table {
+  border:0px;
+}
+
+.form-container-table table table td {
+  padding:5px;
+  border:0px;
+  background: none transparent;
+}
+
+
+
+/**** GREY TABLE STYLE  ******/
+.form-container-table-grey table, .form-container-table-grey table td {
+  background: #f7f7f7;
+  border-bottom:1px dashed #ccc; 
+}
+
+.form-container-table-grey .form-container-header {
+  display:none;
+}
+
+.form-container-table-grey table tr:nth-child(2n) td,.form-container-table-grey table tr td {
+  background: #f7f7f7;
+  padding: 15px;
+  border-bottom:1px dashed #ccc;
+}
+
+.form-container-table-grey table .first {
+  font-weight:bold;
+  width:286px;
+}
+
+.form-container-table-grey table td.text-field input, .form-container-table-grey table td.textarea textarea {
+  width: 315px;
+}
+
+.form-container-table-grey table td.textarea textarea {
+  height:48px;
+}
+
+.form-container-table-grey table table {
+  border:0px;
+}
+
+.form-container-table-grey table table td {
+  padding:5px !important;
+  border:0px;
+}
+
+.form-container-table-grey td.matrix table th {
+  background: #f7f7f7;
+  border:0px;
+  color: #333;
+}
+
+.form-container-table-grey table td label {
+  padding-left:8px;
+}
+
+.form-container-table-grey td.matrix table tr:nth-child(n+1) td:nth-child(n+2) {
+  background: #E4E8EB;
+  border: 2px solid #f7f7f7;
+}
+
+.form-container-table-grey td.rank input {
+  margin-right:8px;
+}
+
+.form-container-table-grey table td .pickerWrapper_Default td {
+  padding:0px !important;
+}
+
+/*  OVERRIDE STYLING OF TELERIK CONTROL */
+table.calendarWrapper_Default {
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+table.calendarWrapper_Default td, table.calendarWrapper_Default th {
+  padding:0px;
+  border:0px;
+  background: auto !important;
+}
+
+table.calendarWrapper_Default td table td {
+  padding:auto;
+}
+table.calendarWrapper_Default tr:nth-child(2n+1) td,
+table.calendarWrapper_Default tr:nth-child(2n) td{
+  background: transparent;
+  vertical-align:middle;
+  border:0px;
+}
+
+
+.pickerWrapper_Default {
+  height:auto !important;
+}
+.calendarWrapper_Default {
+  margin:0px !important;
+}
+.calendarWrapper_Default td{
+  border :0px !important;
+}
+
+.calendarWrapper_Default td table {
+  margin:0px !important;
+  border : 0px !important;
+}
+
+.pickerWrapper_Default td{
+  border:0px !important;
+  padding:0px !important;
+}

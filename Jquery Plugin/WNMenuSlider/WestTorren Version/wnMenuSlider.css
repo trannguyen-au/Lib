@@ -1,0 +1,94 @@
+/*** HOMEPAGE SLIDER CSS ***/
+#homepage-slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:460px;
+  height:280px;
+}
+
+#homepage-slider {
+  position:relative;
+  width:735px;
+  height: 280px;
+}
+
+#homepage-slider .menu-content {
+  float:right;
+  position:relative;
+  right:0px;
+  width:310px;
+  height:70px;
+  z-index:200;
+  font-size:11px;
+  overflow:hidden;
+}
+
+#homepage-slider h3 {
+  margin:0px;
+  padding: 0px 0px 8px 0px;
+  font-size:13px;
+  color : #222222;
+}
+
+#homepage-slider a {
+  display:block;
+  float:right;
+  z-index:200;
+  width:310px;
+  color : #222222;
+  text-decoration:none;
+}
+
+#homepage-slider a:hover, #homepage-slider a:hover h3, #homepage-slider a.current, #homepage-slider a.current h3{
+  color: #fff;
+  font-weight:bold;
+}
+
+#homepage-slider .tab0 a {
+  /*border-right: 10px solid #00A65E;*/
+  background: url("bg1_normal.gif") right bottom no-repeat transparent;
+}
+#homepage-slider .tab0 a:hover, #homepage-slider .tab0 a.current {
+  background: url("bg_1.png") no-repeat;
+}
+#homepage-slider .tab1 a {
+  /*border-right: 10px solid #F8931F;*/
+  background: url("bg2_normal.gif") right bottom no-repeat transparent;
+}
+#homepage-slider .tab1 a:hover, #homepage-slider .tab1 a.current {
+  background: url("bg_2.png") no-repeat;
+}
+#homepage-slider .tab2 a {
+  /*border-right: 10px solid #0079C2;*/
+  background: url("bg3_normal.gif") right bottom no-repeat transparent;
+}
+#homepage-slider .tab2 a:hover, #homepage-slider .tab2 a.current {
+  background: url("bg_3.png") no-repeat;
+}
+#homepage-slider .tab3 a {
+  background: url("bg4_normal.gif") right bottom no-repeat transparent;
+  /*border-right: 10px solid #017D47;*/
+}
+#homepage-slider .tab3 a:hover, #homepage-slider .tab3 a.current {
+  background: url("bg_4.png") no-repeat;
+}
+
+
+#homepage-slider a .menu-content-wrap {
+  width:250px;
+  border-bottom:0px dashed #ccc;
+  padding:10px 10px 10px 15px;
+  height:50px;
+  float:right;
+  cursor:pointer;
+}
+#homepage-slider a:hover .menu-content-wrap {
+  border:0px;
+  height:70px;
+}
+
+* html #homepage-slider a .menu-content-wrap {
+  overflow:hidden;
+  height:69px;
+}?

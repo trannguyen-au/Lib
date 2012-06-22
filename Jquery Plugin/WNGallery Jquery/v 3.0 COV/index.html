@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="form-template.css">
+  <link rel="stylesheet" href="data-list-view.css">
+  <link rel="stylesheet" href="wnGallery.css">
+  
+  <!-- end CSS-->
+  <!--[if IE]><link rel="stylesheet" href="galleryIE.css"><![endif]-->
+  
+  <style type="text/css">
+    .no-js, .no-js-element {
+      display:none !important;
+    }
+  </style>
+  <noscript>
+    <style type="text/css" >
+      .no-js, .no-js-element {
+        display:block !important;
+      }
+      .js, .js-element {
+        display:none !important;
+      }
+    </style>
+  </noscript>
+
+  <script src="modernizr-2.0.6.min.js"></script>
+  <script src="jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="wnGoogleMap.1.4.js"></script>
+  <script src="wnGallery.js"></script>
+  <script src="plugins.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div class="header clearfix">
+		<img src="logo.gif">
+    </div>
+    <div id="main" role="main">
+	  <div class="side-box-wrap left">
+	  <div class="side-box-top"></div>
+	  <div class="side-box">
+	    <div class="list-wrap">
+		  <ul class="layout-list gallery-list">
+		    <li class="current"><a href="#">Link is here</a></li>
+			<li><a href="#">Link is here</a></li>
+			<li><a href="#">Link is here</a></li>
+			<li><a href="#">Link is here</a></li>
+			<li><a href="#">Link is here</a></li>
+			<li><a href="#">Link is here</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="side-box-bottom"></div>
+	  </div>
+
+	  <div class="main-box-wrap right">
+	  <div class="main-box-top"></div>
+	  <div class="main-box">
+	    <div class="wnGallery noscript clearfix" id="wn-gallery">
+		<div class="count-info"></div>
+		<div class="gallery-control clearfix">
+		  <div class="left paging-info">6 of 12</div>
+		  <div class="right paging-control">
+			<a class="pre left" href="#"></a>
+			<a class="play left" href="#"></a>
+			<a class="next left" href="#"></a>
+			<a class="full-screen left" href="#"></a>
+		  </div>
+		</div>
+		<div class="main-image">
+		  
+		</div>
+		<div class="thumbnail-wrap">
+			<div class="left img-holder"><div class="cover-background">&nbsp;</div><img src="1.jpg" title="1.jpg" alt="This is testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="2.jpg" title="2.png" alt="this is another testing image"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="3.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="4.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="5.jpg" title="Third Image" alt="Lorem ipsum dolor amet"></div>
+			<div class="left img-holder"><div class="cover-background"></div><img src="6.jpg" title="1.jpg" alt="This is testing image"></div>
+			
+		</div>
+		
+	  </div>
+		
+		<div class="left gallery-info">
+		  <h4 class="sub-heading" style="margin:0px;">5ivebar</h4>
+		  <p>560 Beaufort St Mt Lawley</p>
+		  <h4 class="sub-heading">Artist Credits</h4>
+		  <p>Lisa Temes, Carley Ternes, Daek William</p>
+		  <h4 class="sub-heading">More info:</h4>
+		  <p>Morbi diam nibh, fringilla in blandit et, tristique sed est. Proin sollicitudin ullamcorper urna, non tempor lacus vulputate at. Curabitur vestibulum interdum euismod. Cras nec nibh nunc.</p>
+		</div>
+		<div class="right gallery-map">
+		  <div class="google-map" id="gallery-google-map" rel="560 Beaufort St Mt Lawley, SA Australia"></div>
+		</div>
+		
+		<div class="clear"></div>
+	  </div>
+	  <div class="main-box-bottom"></div>
+    </div>
+    <div class="footer">
+
+    </div>
+  </div> <!--! end of #container -->
+</body>
+</html>

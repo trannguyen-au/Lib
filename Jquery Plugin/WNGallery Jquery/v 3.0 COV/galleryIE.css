@@ -1,0 +1,35 @@
+/* ==|== primary styles FOR IE =====================================================
+   Author: 
+   ========================================================================== */
+.side-box-top,.side-box-bottom, .main-box-top, .main-box-bottom,.paging-controller-top {
+  display:block;
+}
+
+.side-box-top {
+  background: url("border-top-small.gif") no-repeat;
+  width: 320px;
+  height:15px;
+}
+
+.side-box-bottom {
+  background: url("border-bottom-small.gif") no-repeat;
+  width: 320px;
+  height:15px;
+}
+
+.side-box, .main-box {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.main-box-top {
+  background: url("border-top.gif") no-repeat;
+  width: 610px;
+  height:15px;
+}
+
+.main-box-bottom {
+  background: url("border-bottom.gif") no-repeat;
+  width: 610px;
+  height:15px;
+}

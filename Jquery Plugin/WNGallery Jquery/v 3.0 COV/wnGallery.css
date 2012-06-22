@@ -1,0 +1,327 @@
+
+/* no script version */
+.wnGallery {
+  position:relative;
+  background :#fff;
+  width:580px;
+  
+  margin-bottom:10px;
+}
+
+.wnGallery.noscript .gallery-control, .wnGallery.noscript .main-image{
+  display:none;
+}
+
+.wnGallery .thumbnail-wrap {
+  overflow:hidden;
+  background: #E2E2E2;
+  padding:10px 10px 10px 0px;
+  height: 60px;
+  position:relative;
+}
+
+.wnGallery .thumbnail-wrap img{
+  position:absolute;
+  width: 76px;
+  height: 56px;
+  border:2px solid #fff;
+  z-index:2;
+}
+
+/* with script */
+.wnGallery .gallery-control {
+  position:absolute;
+  top:-36px;
+  left:225px;
+  width: 140px;
+  background: url("controller-top.gif") no-repeat;
+  color: #000;
+  padding: 5px 15px 0px 15px;
+  font-weight:bold;
+}
+
+.wnGallery .paging-control {
+  width: 70px;
+}
+
+.wnGallery .gallery-control a {
+  display:block;
+  width: 14px;
+  height:11px;
+  padding: 1px 0px;
+  margin-right:6px;
+}
+
+.wnGallery .gallery-control a.pre {
+  background: url("pre.gif") no-repeat;
+}
+.wnGallery .gallery-control a.next {
+  background: url("next.gif") no-repeat;
+}
+.wnGallery .gallery-control a.play {
+  background: url("pause.gif") no-repeat;
+  width: 8px;
+}
+.wnGallery .gallery-control a.play.pause {
+  background: url("play.gif") no-repeat;
+}
+.wnGallery .gallery-control a.full-screen {
+  background: url("full-screen.gif") no-repeat;
+  padding: 0px;
+  height:13px;
+  width:15px;
+  margin-right:0px;
+}
+
+.wnGallery .main-image {
+  width: 100%;
+  height: 400px;
+  background: #eee;
+  margin-bottom:10px;
+}
+
+.wnGallery .main-image img {
+  width:100%;
+  height:100%;
+}
+
+
+.wnGallery .thumbnail-wrap .thumbnail-wrap-inner {
+  position:absolute;
+  left:0px;
+}
+
+.wnGallery .thumbnail-wrap .img-holder.active img{
+  border:2px solid #fff;
+  width:76px;
+  height:56px;
+}
+
+.wnGallery .thumbnail-wrap .img-holder {
+  position:relative;
+  margin-left:10px;
+  cursor:pointer;
+  width: 80px;
+  height:60px;
+}
+
+.wnGallery .thumbnail-wrap .img-holder .cover-background {
+  opacity:0.7; 
+  filter:alpha(opacity=70);
+  width:80px;
+  height:60px;
+  background: #000;
+  position:absolute;
+  cursor:pointer;
+  display:inline;
+  z-index:5;
+}
+
+.wnGallery .thumbnail-wrap .img-holder.active .cover-background{
+  opacity:0;
+  filter:alpha(opacity=0);
+  display:none;
+}
+
+
+.wnGallery .thumbnail-wrap .move-left {
+  position:absolute; 
+  top:10px;left:10px;width:50px;height:60px;
+  background: url("pre-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}
+
+.wnGallery .thumbnail-wrap .move-right {
+  position:absolute; 
+  top:10px;right:10px;width:50px;height:60px;
+  background: url("next-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}
+
+.wnGallery .count-info, .gallery-fullscreen .count-info{
+  position:absolute;
+  left:20px;
+  top:20px;
+  color: #fff;
+  font-size:15px;
+  font-weight: bold;
+  display:none;
+}
+
+
+/* full screen styling*/
+
+.close-button {
+  position:absolute;
+  right: -18px;
+  top: -18px;
+  background: url("close.png") no-repeat;
+  width:36px;
+  height:36px;
+  display:block;
+}
+
+.gallery-fullscreen-wrap span.loading {
+  background: url("loading.gif") center no-repeat;
+  width:100%;
+  height:200px;
+  float:left;
+  margin:0 auto;
+}
+
+
+.gallery-overlay {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  display:none;
+  background: #999;
+  opacity:0;
+  filter:alpha(opacity=0);
+  z-index:20;
+}
+
+.gallery-fullscreen-wrap {
+  left:0px;
+  top:5%;
+  position:absolute;
+  width:100%;
+  z-index:1000;
+  display:none;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+.gallery-fullscreen {
+  width: 900px;
+  margin:0px auto;
+  background: #fff;
+  position:relative;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.gallery-fullscreen .thumbnail-wrap {
+  overflow:hidden;
+  background: #E2E2E2;
+  padding:10px 10px 10px 0px;
+  height: 60px;
+  position:relative;
+}
+
+.gallery-fullscreen .thumbnail-wrap img{
+  position:absolute;
+  width: 76px;
+  height: 56px;
+  border:2px solid #fff;
+  z-index:2;
+}
+
+/* with script */
+.gallery-fullscreen .gallery-control {
+  position:absolute;
+  top:-21px;
+  left:405px;
+  width: 140px;
+  background: url("controller-top.gif") no-repeat;
+  color: #000;
+  padding: 5px 15px 0px 15px;
+  font-weight:bold;
+}
+
+.gallery-fullscreen .gallery-control a {
+  display:block;
+  width: 14px;
+  height:11px;
+  padding: 1px 0px;
+  margin-right:6px;
+}
+
+.gallery-fullscreen .gallery-control a.pre {
+  background: url("pre.gif") no-repeat;
+}
+.gallery-fullscreen .gallery-control a.next {
+  background: url("next.gif") no-repeat;
+}
+.gallery-fullscreen .gallery-control a.play {
+  background: url("pause.gif") no-repeat;
+  width: 8px;
+}
+.gallery-fullscreen .gallery-control a.play.pause {
+  background: url("play.gif") no-repeat;
+}
+.gallery-fullscreen .gallery-control a.full-screen {
+  background: url("close.gif") no-repeat;
+  padding: 0px;
+  height:14px;
+  width:14px;
+  margin-right:0px;
+}
+
+.gallery-fullscreen .main-image {
+  width: 100%;
+  background: #eee;
+  margin-bottom:10px;
+}
+
+.gallery-fullscreen .main-image img {
+  width:100%;
+}
+
+
+.gallery-fullscreen .thumbnail-wrap .thumbnail-wrap-inner {
+  position:absolute;
+  left:0px;
+}
+
+.gallery-fullscreen .thumbnail-wrap .img-holder.active img{
+  border:2px solid #fff;
+  width:76px;
+  height:56px;
+}
+
+.gallery-fullscreen .thumbnail-wrap .img-holder {
+  position:relative;
+  margin-left:10px;
+  cursor:pointer;
+  width: 80px;
+  height:60px;
+}
+
+.gallery-fullscreen .thumbnail-wrap .img-holder .cover-background {
+  opacity:0.7; 
+  filter:alpha(opacity=70);
+  width:80px;
+  height:60px;
+  background: #000;
+  position:absolute;
+  cursor:pointer;
+  z-index:5;
+}
+
+.gallery-fullscreen .thumbnail-wrap .img-holder.active .cover-background{
+  opacity:0;
+  filter:alpha(opacity=0);
+  display:none;
+}
+
+
+.gallery-fullscreen .thumbnail-wrap .move-left {
+  position:absolute; 
+  top:10px;left:10px;width:50px;height:60px;
+  background: url("pre-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}
+
+.gallery-fullscreen .thumbnail-wrap .move-right {
+  position:absolute; 
+  top:10px;right:10px;width:50px;height:60px;
+  background: url("next-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}

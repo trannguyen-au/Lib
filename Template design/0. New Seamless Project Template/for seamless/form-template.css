@@ -1,0 +1,45 @@
+.form_container {
+  width: 100%;
+}
+
+.form_container .field input, .form_container .field textarea{
+  width: 460px;
+}
+
+.form_container .field textarea {
+  height: 60px;
+}
+
+.form_container .field select {
+  width: 200px;
+}
+.form_container .field div > table {
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+.form_container .field div > table > td {
+  border:0px;
+  margin:0px;
+}
+
+/*  OVERRIDE STYLING OF TELERIK CONTROL */
+.pickerWrapper_Default {
+  height:auto !important;
+}
+.calendarWrapper_Default {
+  margin:0px !important;
+}
+.calendarWrapper_Default td{
+  border :0px !important;
+}
+
+.calendarWrapper_Default td table {
+  margin:0px !important;
+  border : 0px !important;
+}
+
+.pickerWrapper_Default td{
+  border:0px !important;
+}

@@ -1,0 +1,85 @@
+#slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:460px;
+  height:280px;
+}
+
+#slider {
+  position:relative;
+  width:735px;
+}
+
+#slider .menu-content {
+  float:right;
+  position:relative;
+  right:0px;
+  width:310px;
+  height:70px;
+  z-index:200;
+  overflow:hidden;
+}
+
+#slider h3 {
+  margin:0px;
+  padding: 0px 0px 8px 0px;
+  font-size:14px;
+}
+
+#slider a {
+  display:block;
+  float:right;
+  z-index:200;
+  width:300px;
+  color : #000;
+  text-decoration:none;
+}
+
+#slider a:hover, #slider a.current{
+  color: #fff;
+}
+
+#slider .tab1 a {
+  border-right: 10px solid #00A65E;
+}
+#slider .tab1 a:hover, #slider .tab1 a.current {
+  background: url("bg1.png") no-repeat;
+}
+#slider .tab2 a {
+  border-right: 10px solid #F8931F;
+}
+#slider .tab2 a:hover, #slider .tab2 a.current {
+  background: url("bg2.png") no-repeat;
+}
+#slider .tab3 a {
+  border-right: 10px solid #0079C2;
+}
+#slider .tab3 a:hover, #slider .tab3 a.current {
+  background: url("bg3.png") no-repeat;
+}
+#slider .tab4 a {
+  border-right: 10px solid #017D47;
+}
+#slider .tab4 a:hover, #slider .tab4 a.current {
+  background: url("bg4.png") no-repeat;
+}
+
+
+#slider a .menu-content-wrap {
+  width:250px;
+  border-bottom:1px dashed #ccc;
+  padding:10px 0px 10px 15px;
+  height:49px;
+  float:right;
+  cursor:pointer;
+}
+#slider a:hover .menu-content-wrap {
+  border:0px;
+  height:70px;
+}
+
+* html #slider a .menu-content-wrap {
+  overflow:hidden;
+  height:69px;
+}

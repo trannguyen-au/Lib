@@ -1,0 +1,69 @@
+<html>
+<head>
+	<script type="text/javascript" src="modernizr-2.0.6.min.js"></script>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="wnPlaceholder.js"></script>
+	<script>
+	$(document).ready(function() {
+		/*$("#txtMobile").wnPlaceHolder();
+    $("#txtName").wnPlaceHolder();
+    */
+    $(".input-text").wnPlaceHolder();
+    $(".input-holder-wrapper").wnPlaceHolder();
+	});
+	</script>
+	
+	<link type="text/css" rel="stylesheet" href ="site.css" /> 
+	<style>
+	input[type="text"], textarea {
+    width: 400px;
+  }
+  
+  
+	
+	</style>
+</head>
+
+<body>
+<div class="container">
+	<h2>WN Place Holder JQuery Plugin v1.0</h2>
+	<div style="float:left">
+	This is a demo of Wn Place Holder Jquery plugin. the options available are:
+	<pre>
+
+	</pre>
+
+	<div class="main-box left">
+		<form method="get">
+      <div>Input type = text</div>
+      <div>
+        <input type="text" placeholder="Default input text with placeholder" name="txtName" id="txtName" class="input-text">
+      </div>
+      <div placeholder="Placeholder is in a wrapper div" class="input-holder-wrapper">
+        <input type="text" name="txtTest" id="txtTest" class="input-text-2">
+      </div>
+      <span placeholder="Placeholder is in a wrapper span" class="input-holder-wrapper">
+        <input type="text" name="txtTest1" id="txtTest1" class="input-text-2">
+      </span>
+      
+      <div>Textarea</div>
+      <div>
+        <textarea placeholder="Default textarea with placeholder" name="txtNameTextarea" id="txtNameTextarea" class="input-text"></textarea>
+      </div>
+      <div placeholder="Placeholder is in a wrapper div" class="input-holder-wrapper">
+        <textarea name="txtTestTextarea" id="txtTestTextarea" class="input-text-2"></textarea>
+      </div>
+      <span placeholder="Placeholder is in a wrapper span" class="input-holder-wrapper">
+        <textarea  name="txtTest1Textarea" id="txtTest1Textarea" class="input-text-2"></textarea>
+      </span>
+      <div>
+        <input type="submit" value="submit">
+      </div>
+    </form>
+		
+  </div>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>

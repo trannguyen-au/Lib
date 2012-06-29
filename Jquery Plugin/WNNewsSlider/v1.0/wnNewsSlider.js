@@ -203,10 +203,6 @@ $.fn.wnNewsSlider = function(options) {
 	
 	return this.each(function() {
 	  init();
-	  //if(options.autoRotate) {
-		//timer = setInterval(run , options.timerInterval);
-		//timer = setInterval(runTest, options.timerInterval/100)
-	  //}
 	});
 };
 })(jQuery);

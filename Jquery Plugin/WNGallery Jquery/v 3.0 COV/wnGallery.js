@@ -1,9 +1,13 @@
 /**
-*   WN Gallery v2.0
-*   @copyright (C) 2011 Wery Nguyen
+*   WN Gallery v3.0
+* @copyright (C) 2012 Wery Nguyen
 *	@author nguyennt86@gmail.com
 *   Seamless CMS	
 *	Change Log:
+*	@version 3.0	22/06/2012
+  - add thumbnail of 5 images with left and right button
+  - add full-screen feature which display the current image in full-screen (lightbox style)
+  - add gallery control on top: pre/next/play/pause/full-screen aside with information box
 *	@version 2.0	23/04/2012
 	- add image pager
 	- image can now be rotated automatically
@@ -154,7 +158,6 @@ $.fn.wnGallery = function(options) {
 	    // display the first image
 	    activeIndex = 0;
 	  }
-	  
 	  DisplayImage(activeIndex);
 	  MoveViewPort(activeIndex,"right");
 	}

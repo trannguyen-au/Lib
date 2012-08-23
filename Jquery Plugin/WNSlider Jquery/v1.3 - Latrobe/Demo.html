@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	
+	
+	<script type="text/javascript" src="wnSlider.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#slider").wnSlider( {
+			timerInterval:3000,
+			autoRotate:true , 
+			effect:"fade",
+			pagingType: "image",
+			pagingNavigation: true,
+			pagingPosition: 'bottom-right'
+		});
+	});
+	</script>
+	
+	<link type="text/css" rel="stylesheet" href ="jquery-ui-1.8.16.custom.css" />
+	<link type="text/css" rel="stylesheet" href ="wnSlider.css" /> 
+	
+	<style>
+	
+	body {
+		font-family: Arial;
+		background: #FFFFF;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	
+	pre {
+		background: #ddd;
+		border-radius: 5px;
+		padding:10px;
+	}
+	</style>
+</head>
+
+<body>
+<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff; border:1px solid #ddd; padding:10px;">
+	<h2>WNSlider JQuery Plugin v1.3</h2>
+	<div style="float:left">
+	
+	This is a demo of WNSlider Jquery plugin. the options available are:
+	<pre>
+$("#slider").wnSlider( {  
+	timerInterval:6000, 
+	pagingType:"image", // "number" display 1-2-3 ...// "none" , no paging display
+	autoRotate:true ,  
+	effect:"fade", // "none"
+	pagingNavigation: true, // display prev-next button
+	animationSpeed: 500,  // speed for fade animation
+	style: "", //custom style for the slider
+});
+	</pre>
+	
+	Html structure: 
+	<pre>
+	
+&lt;div style=&quot;float:left; margin-left:10px; width:400px&quot;&gt;
+	&lt;div id=&quot;slider&quot;&gt;
+		&lt;img src=&quot;1.jpg&quot; title=&quot;1.jpg&quot; alt=&quot;This is testing image&quot; rel=&quot;http://www.yahoo.com&quot; style=&quot;display:none&quot;&gt;
+		&lt;img src=&quot;2.jpg&quot; title=&quot;2.png&quot; alt=&quot;this is another testing image&quot; rel=&quot;http://www.linkedin.com&quot; style=&quot;display:none&quot;&gt;
+		&lt;img src=&quot;3.jpg&quot; title=&quot;Third Image&quot; alt=&quot;Lorem ipsum dolor amet&quot; rel=&quot;http://www.google.com&quot; style=&quot;display:none&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	
+	</pre>
+		
+	<div style="float:left;">
+		<div id="slider">
+			<img src="1.jpg" target='_blank' title="1.jpg" alt="This is testing image" rel="http://www.yahoo.com">
+			<img src="2.jpg" title="2.png" alt="this is another testing image" rel="http://www.linkedin.com">
+			<img src="3.jpg" target="_blank" title="Third Image" alt="Lorem ipsum dolor amet" rel="http://www.google.com">
+		</div>
+	</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>

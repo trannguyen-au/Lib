@@ -39,10 +39,37 @@
   color: #000 !important;
 }
 
+a.green {
+  color: #34B87D !important;
+}
+
+a.green:hover {
+  color: #4DCD93 !important;
+}
+
 
 /* SPACING */
+.no-border
+{
+  border: none !important;
+}
+
+.top-0
+{
+  margin-top:0px !important;
+  padding-top: 0px;
+}
+
 .space-10, .top-10 {
   margin-top:10px;
+}
+
+.top-15 {
+  margin-top:15px;
+}
+
+.top-20 {
+  margin-top:20px;
 }
 
 .left-10 {
@@ -53,8 +80,18 @@
   margin-right:10px;
 }
 
+.bottom-5 {
+  margin-bottom:5px;
+}
+
 .bottom-10 {
   margin-bottom:10px;
+}
+.bottom-15 {
+  margin-bottom:15px;
+}
+.bottom-20 {
+  margin-bottom:20px;
 }
 
 .right-20
@@ -65,6 +102,17 @@
 .bottom-10 {
   margin-bottom:10px;
 }
+
+.top-3
+{
+  margin-top: 3px;
+}
+
+.left-85
+{
+  margin-left: 85px;
+}
+
 .marginBottom15
 {
   margin-bottom: 15px;
@@ -90,3 +138,6 @@
   margin-right: 0px !important;
 }
 
+.error {
+  color: #f00;
+}

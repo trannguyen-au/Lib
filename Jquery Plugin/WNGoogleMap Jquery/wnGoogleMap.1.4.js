@@ -32,7 +32,8 @@ $.fn.wnGoogleMap = function(options) {
     zoom     :  15,      // zoom level
     title    :   "",
     markerImage : "",
-    disableAll : false
+    disableAll : false,
+    infoBoxWidth: 0
     };
   
   var defaultAddress = "Melbourne CBD, Victoria 3000, Australia";
@@ -64,9 +65,14 @@ $.fn.wnGoogleMap = function(options) {
     var marker = null;  // for the pointer on the map
   var geocoder;       // location geocoder
   var map;            // the map itself
+  
+  var infoW = options.infoBoxWidth!=0?options.infoBoxWidth : 50;
+  
   var infowindow = new google.maps.InfoWindow({   // information pop up.
-    size: new google.maps.Size(50,50)
+    size: new google.maps.Size(infoW,50)
   });
+  
+  
   
   function init() {
     // create the map

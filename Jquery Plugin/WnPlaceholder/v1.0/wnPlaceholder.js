@@ -10,7 +10,7 @@
 (function($){ 
 $.fn.wnPlaceHolder = function(options) {
 	var options = $.extend({
-    content : 'Please fill in here',
+    content : '',
     submitButton: "input[type='submit']",
     holderColor: "#88f",
     color: "#000"

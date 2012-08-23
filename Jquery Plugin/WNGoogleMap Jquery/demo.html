@@ -4,7 +4,7 @@
 <title>WN Google Map Jquery</title> 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript" src="wnGoogleMap.js"></script> 
+<script type="text/javascript" src="wnGoogleMap.1.4.js"></script> 
 
 <script type="text/javascript"> 
 $(document).ready(function() {
@@ -19,9 +19,8 @@ $(document).ready(function() {
 	// refresh the map when search button clicked
 	$("#btnSearch").click(function() {
 		$("#map_canvas").wnGoogleMap({
-			address:"24-30 Ashley Road Yarrambat 3091 Australia",
-			searchBy: "both",
-			latlng: "-37.6347969122054,145.130459798335"
+			address:$("#address").val(),
+			searchBy: "auto"
 		});
 	});
 	

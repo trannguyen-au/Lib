@@ -1,15 +1,15 @@
 <html>
 <head>
 	<script type="text/javascript" src="jquery.min.1.6.4.js"></script>
-	<script type="text/javascript" src="wnTextSizeUpDown.js"></script>
+	<script type="text/javascript" src="wnTextSizeUpDown.2.1.js"></script>
 	
 	<script>
 		$(document).ready(function() {
-			$("#textSizeChange").wnTextSizeUpDown({
-				selector: ["p",".text-size"],
-				effect:true
-			});
-			
+    WnLib.TextSizeUpDown({
+      selector: ["p",".text-size"]
+      //effect: true,
+    });
+      /*$("p,.text-size").wnTextSizeUpDown();*/
 		});
 	</script>
 	
@@ -36,9 +36,9 @@
 <body>
 	<div style="margin:0px auto; width: 960px; border:1px solid #eee; background:#fff; border:1px solid #ddd; padding:10px;">
 	<h1>WNTextSizeUpDown Jquery Plugin v1.0</h1>
-	<div id="textSizeChange"></div>
-	<div id="textSizeChange2"></div>
-	<p>Can you change this p tag size?</p>
+	<a id="larger-trigger" href="#">Larger</a> |
+	<a id="smaller-trigger" href="#">Smaller</a>
+	<p style="font-size:12px; line-height:16px">Can you change this p tag size?</p>
 	<span>This is a span tag</span>
 	<div class="text-size">This is a div, class = "text-zize"</div>
 	<table id="text_table">

@@ -8,8 +8,10 @@
 		/*$("#txtMobile").wnPlaceHolder();
     $("#txtName").wnPlaceHolder();
     */
+    
     $(".input-text").wnPlaceHolder();
     $(".input-holder-wrapper").wnPlaceHolder();
+    $("#txtName").val("gpgo");
 	});
 	</script>
 	
@@ -37,7 +39,10 @@
 		<form method="get">
       <div>Input type = text</div>
       <div>
-        <input type="text" placeholder="Default input text with placeholder" name="txtName" id="txtName" class="input-text">
+        <input type="text" name="txtName" id="txtName" class="input-text" value='test'>
+      </div>
+      <div>
+        <input type="text" placeholder="Default input text with placeholder" name="txtName" id="txtName" class="input-text" value="gogog">
       </div>
       <div placeholder="Placeholder is in a wrapper div" class="input-holder-wrapper">
         <input type="text" name="txtTest" id="txtTest" class="input-text-2">

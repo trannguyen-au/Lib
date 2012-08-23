@@ -1,0 +1,55 @@
+.wn-slider {
+  position:relative;
+  width:400px;
+	height:250px;
+}
+
+.wn-slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:0;
+  width:100%;
+  height:100%;
+}
+
+.wn-slider img:first-child {  /*for no-js version: display first image on load up */
+  z-index:10;
+  
+}
+
+.wn-slider img.active {
+  z-index:10;
+}
+
+.wn-pager {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  z-index:20;
+  background:none transparent;
+}
+.wn-pager span {
+  background:none transparent;
+  display:none;
+}
+
+.wn-pager a.wn-pager-item {
+  background: url("dot.png") no-repeat;
+  width:11px;
+  height:11px;
+  margin-right:4px;
+  display:block;
+  float:left;
+}
+
+.wn-pager a.wn-pager-item.active {
+  background: url("dot-active.png") no-repeat;
+}
+
+
+
+
+
+
+

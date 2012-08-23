@@ -1,0 +1,155 @@
+/**
+* WN GALLERY V4.0
+**/
+
+/* no script version */
+.wnGallery {
+  width: 195px;
+}
+
+.wnGallery img {
+  width: 195px;
+  margin-bottom:15px;
+}
+
+/* with script */
+/* styling for the thumbnail view */
+.wnGallery .wnThumbnail {
+  position:relative;
+  left:-15px;
+  width: 210px;
+}
+
+.wnGallery .wnThumbnail img {
+  float:left;
+  margin-left: 15px;
+  width:55px;
+  height:55px;
+}
+
+.wnGallery-overlay {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  display:none;
+  background: #999;
+  opacity:0;
+  filter:alpha(opacity=0);
+  z-index:20;
+}
+
+.wnGallery-popup-wrap {
+  position:absolute;
+  top:10%;
+  width:100%;
+  left:0px;
+  z-index:1000;
+  display:none;
+}
+
+.wnGallery-popup {
+  margin:0 auto;
+  background: #fff;
+  padding:15px;
+  width:560px;
+  position:relative;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-main-image, .wnGallery-popup-wrap .wnGallery-popup-main-image img {
+  width:560px;
+  height:400px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-main-image.loading {
+  background: url("loading.gif") center 20px no-repeat;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-main-image.loading img {
+  display:none;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-image-title {
+  margin: 10px 0px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-close-button {
+  position:absolute;
+  right: 15px;
+  top:15px;
+  background: url("icon-close.gif") right 1px no-repeat #fff;
+  border-radius: 0px 0px 0px 2px;
+  width:57px;
+  height:20px;
+  padding:3px 0px 0px 10px;
+  cursor:pointer;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap {
+  position:relative;
+  height:60px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap a.move-left {
+  position:absolute; 
+  top:0px;
+  left:0px;
+  width:50px;height:60px;
+  background: url("pre-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap a.move-right {
+  position:absolute; 
+  top:0px;
+  right:0px;width:50px;height:60px;
+  background: url("next-button.gif") no-repeat;
+  display:block;
+  z-index:10;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .thumbnail-wrap-clip {
+  position:relative;
+  width:460px;
+  height:60px;
+  overflow:hidden;
+  left:50px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .thumbnail-wrap-inner {
+  position:absolute;
+  left:0px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .img-holder {
+  position:relative;
+  margin-left:10px;
+  cursor:pointer;
+  width: 80px;
+  height:60px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .img-holder img {
+  width:80px;
+  height:60px;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .img-holder .cover-background {
+  opacity:0.7; 
+  filter:alpha(opacity=70);
+  width:80px;
+  height:60px;
+  background: #000;
+  position:absolute;
+  cursor:pointer;
+  display:inline;
+  z-index:5;
+}
+
+.wnGallery-popup-wrap .wnGallery-popup-thumbnail-wrap .img-holder.active .cover-background{
+  opacity:0;
+  filter:alpha(opacity=0);
+  display:none;
+}

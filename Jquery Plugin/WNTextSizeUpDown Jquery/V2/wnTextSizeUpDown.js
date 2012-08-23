@@ -13,9 +13,11 @@
 (function($){ 
 $.fn.wnTextSizeUpDown = function(options) {
 	var defaults = {
-	    selector 		: "font-size",  // need to be an array of jquery selector, eg: ["div", "#largerText", "input[type='text']"] ....
+	    selector 		: ["font-size"],  // need to be an array of jquery selector, eg: ["div", "#largerText", "input[type='text']"] ....
 		largerText		: "Larger Size",  // text to be displayed for larger text trigger
 		smallerText 	: "Smaller Size",  // text to be displayed for smaller text trigger
+    largerTrigger : "#larger",
+    smallerTrigger: "#smaller",
 		seperator		: "|",			// seperator between the 2 link buttons
 		times			: 5,			// number of times that the font-size can be increased
 		
@@ -27,7 +29,11 @@ $.fn.wnTextSizeUpDown = function(options) {
 	options = $.extend(defaults, options);
 
 	// init the element array from the selector
-	var elementArray = $(options.selector);
+	// init the element array from the selector
+	var elementArray = new Array();
+	for(var i=0;i<options.selector.length;i++) {
+		elementArray[i] = $(options.selector[i]);
+	}
 	
 	// the container itself
 	var container = $(this);
@@ -91,8 +97,6 @@ $.fn.wnTextSizeUpDown = function(options) {
 				}
 			}
 		}
-
-		
 	}
 	
 	// function to deal with cookie: save data to cookie and get data from cookie

@@ -1,0 +1,47 @@
+/* tab styling */
+a.wn-tab-button, a.wn-tab-button:visited, a.wn-tab-button:link {
+  display:block;
+  background: url("tab-bg.gif") right no-repeat #F8F8F8;
+  padding: 12px 30px 7px 20px;
+  color: #333;
+  line-height:16px;
+  font-size:12px;
+  text-decoration:none;
+  float:left;
+  position:relative;
+  margin-right:1px;
+}
+
+a.wn-tab-button span {
+  background: url("tab-bg.gif") left no-repeat #F8F8F8;
+  position:absolute;
+  left:0px;
+  top:0px;
+  height:100%;
+  width:5px;
+}
+
+a.wn-tab-button:focus {
+  outline: invert dotted thin;
+}
+
+a.wn-tab-button.active {
+  background: url("tab-bg-active.gif") right no-repeat #F0F0F2;
+  font-size:14px;
+  padding: 10px 30px 9px 20px;
+}
+
+a.wn-tab-button.active  span {
+  background: url("tab-bg-active.gif") left no-repeat #F0F0F2;
+}
+
+.wn-tab-content {
+  background: #F0F0F2;
+  padding: 20px;
+}
+
+/*  NO JS STYLING */
+.wn-tab-content.no-js-element {
+  padding: 0px;
+  background: none;
+}

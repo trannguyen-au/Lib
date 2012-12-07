@@ -1,0 +1,18 @@
+body {
+  margin:0px;
+  color: #333;
+  font-family: Arial,Verdana,Helvetica,sans-serif;
+  font-size: 75%;
+  line-height: 1.5em;
+  background: #eee;
+}
+.container {
+  margin: 0 auto;
+  width: 960px;
+  background: #fff;
+  box-shadow: 0 0 5px 5px #ddd;
+}
+
+.content-wrap {
+  padding: 10px;
+}

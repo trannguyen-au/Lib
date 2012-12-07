@@ -1,0 +1,466 @@
+/** COMMON LAYOUT LIST STYLE - USE TO CLEAR THE DEFAULT LAYOUT 
+OF UL LIST AND PREPARE IT TO BE USED AS A LAYOUT TAG **/
+ul.layout-list {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+
+ul.layout-list li{
+  list-style-type:none;
+  display:block;
+}
+
+ul.layout-list li:last-child {
+  border-bottom:0px;
+}
+
+/** COMMON FILTER STYLE **/
+.filter-wrap {
+  background:#F8F8F8;
+  padding:15px 15px 15px 15px;
+  margin:0px 0px 0px 0px;
+}
+
+.filter-wrap.no-background {
+  background: #fff !important;
+  padding-left:0px;
+}
+
+.filter-combo-box-wrap {
+  padding: 0px 10px 0px 15px;
+  float:left;
+}
+
+.filter-combo-box-wrap select {
+  padding:3px;
+}
+
+/* blank filter keyword */
+.filter-wrap .filter-keyword-wrap {
+  width:255px;
+  margin-right:15px;
+  height:25px;
+  float:left;
+}
+
+.filter-wrap .filter-keyword-wrap input {
+  color: #333;
+  line-height:16px;
+  margin: 0;
+  padding: 5px 0px 5px 5px ;
+  border:0px;
+  width:213px;
+  border-top: 1px solid #9F9F9F;
+  border-left: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 0px;
+  float:left;
+}
+
+/* filter keyword on grey background */
+.filter-wrap .filter-keyword-wrap.simple-box {
+  width:180px;
+}
+.filter-wrap .filter-keyword-wrap.simple-box input {
+  padding-left: 26px;
+  border-right:1px solid #C6C6C6;
+  background: url("icon-search-2.png") 5px no-repeat #fff;
+}
+
+
+/** FILTER TRIGGER INPUT VERSION **/
+.filter-wrap div.filter-trigger {
+  
+}
+
+.filter-wrap div.filter-trigger input {
+  background: url("button_arrow_right_bg.gif") right no-repeat;
+  height:23px;
+  color: #fff;
+  padding:0px 20px 0px 10px;
+  border:0px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+/** FILTER OPTION TRIGGER **/
+.filter-wrap .option-trigger {
+  display:block;
+  width:160px;
+  height:18px;
+  border-top: 1px solid #ABADB3;
+  border-left: 1px solid #E2E3EA;
+  border-bottom: 1px solid #E3E9EF;
+  border-right: 1px solid #E2E3EA;
+  position:relative;
+  background: #fff;
+  padding: 3px 2px 3px 6px;
+  color: #000;
+  z-index:100;
+}
+.filter-wrap .option-trigger:focus {
+  outline:0;
+}
+.filter-wrap .option-trigger:hover {
+  color: #000;
+  text-decoration:none;
+}
+
+.filter-wrap .option-trigger span.icon-down {
+  background: url("down_arrow.gif") no-repeat;
+  display:block;
+  position:absolute;
+  right: 9px;
+  top:10px;
+  width:7px;
+  height:4px;
+    
+}
+.filter-wrap .option-wrap {
+  position:absolute;
+  top:25px;
+  left:0px;
+  visibility:hidden;
+  width:168px;
+  background: #fffffe;
+  border: 1px solid #E3E9EF;
+}
+
+.filter-wrap .option-wrap-faq {
+  position:absolute;
+  top:25px;
+  left:0px;
+  visibility:hidden;
+  width:200px;
+  background: #fffffe;
+  border: 1px solid #E3E9EF;
+  max-height: 480px;
+  overflow: auto;
+  padding : 4px 0 4px 5px;
+}
+
+.filter-wrap .option-trigger:hover .option-wrap-faq {
+  visibility:visible;
+  background: #fffffe;
+}
+
+
+.filter-wrap .option-wrap-faq table th, .filter-wrap .option-wrap-faq table tr td
+{
+    background : none;
+    padding: 4px 7px;
+}
+
+.filter-wrap .option-wrap-faq table tr label
+{
+  padding-left : 7px;
+}
+  
+.faq_detail {
+    border-top : 1px dotted #CDCDCD;
+    padding-top: 15px;
+  }
+.faq_detail p {
+     margin: 14px 0;     
+  }
+.result_report
+  {
+    font-size: 16px;
+    margin : 20px 0px 20px 0px;
+    color : #757575;
+  }
+
+
+.filter-wrap .option-wrap table {
+  width:100%;
+  background: #fff;
+}
+
+.filter-wrap .option-wrap table tr td {
+  background: #fff !important;
+  padding:  3px 6px;
+}
+
+.filter-wrap .option-wrap table tr td input[type="checkbox"] {
+  margin-right:3px;
+}
+  
+.filter-wrap .option-trigger:hover .option-wrap {
+  visibility:visible;
+  background: #fffffe;
+}
+
+.sort-option {
+  width:140px;
+  height:24px;
+  line-height:18px;
+  padding: 3px;
+  margin-right:10px;
+}
+
+/* UL LIST VERSION */
+
+/* 2 column*/
+ul.list-view {
+    margin-top: 10px;
+}
+
+ul.list-view.margin-0 {
+    margin: 0px !important;
+}
+
+ul.list-view li {
+  border-bottom:1px dotted #CDCDCD;
+  padding: 0px 0px 10px 0px;
+  margin-bottom: 10px;
+}
+
+ul.list-view li img {
+  float:left;
+  margin: 0px 15px 0px 0px;
+}
+
+ul.list-view li.last-item {
+  border:0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul.list-view a, ul.list-view a:visited {
+  color:#000;
+}
+
+ul.grey-style li:nth-child(odd) {
+  background: #EDF1F4;
+}
+ul.grey-style li:nth-child(even) {
+  background: #F6F7F9;
+}
+
+ul.grey-style li.odd {
+  background: #EDF1F4;
+}
+
+ul.grey-style li.even {
+  background: #F6F7F9;
+}
+
+
+/** PAGING STYLE **/
+.paging-wrap {
+  margin:0px 0px 20px 0px;
+}
+.paging-wrap ul li {
+  min-width:20px;
+  text-align:center;
+  line-height:14px;
+  padding:3px 0px;
+  display:inline-block ;
+  font-size:11px;
+  border-right:2px solid #fff;  /* color of the space between 2 pager numbers */
+}
+
+.paging-wrap ul li input{ /* Previous / Next trigger */
+  border:0px;
+  background:transparent;
+  cursor:pointer;
+}
+
+.paging-wrap a, .paging-wrap a:visited {
+  background:#F4F4F4;
+  padding:4px 8px 5px 8px;
+  display:inline;
+  min-width:22px;
+  color:#000;
+}
+
+/* style of the inactive page number button */
+.paging-wrap a.paging-nav, 
+.paging-wrap a.paging-nav:visited {
+  background:#FFF;
+}
+
+/* style of the next and previous button on mouse hover*/
+.paging-wrap a.paging-nav:hover{
+  background:#296192;
+  color: #fff;
+  text-decoration:none;
+}
+
+/* style of the current page and when hover to a page number */
+.paging-wrap a:hover, 
+.paging-wrap li.current {
+  text-decoration:none;
+  background:#BABABA;
+  color:#fff;
+  padding-top:3px;
+  padding-bottom:4px;
+}
+.paging-wrap li.current {
+  padding-top:4px;
+  padding-bottom:4px; 
+}
+
+/* IE FIX FOR THE PAGING */
+
+* html .paging-wrap li.current {
+  padding: 4px 8px 4px 8px !important;
+}
+
+* html .paging-wrap ul li  {
+  float:left;
+  padding: 4px 0px 4px 0px
+}
+
+*+html .paging-wrap ul li  {
+  float:left;
+  padding: 3px 0px 4px 0px;
+  vertical-align:middle;
+}
+
+
+*+html .paging-wrap ul a.paging-nav-ie {
+  top:-3px;
+}
+
+/** SPECIFIC TEXT STYLE **/
+
+p.sub-text {
+  color: #0079C2;
+  margin:2px 0px 2px 0px;
+  font-size: 11px;
+  text-align: left;
+}
+
+p.sub-text a, p.sub-text a:visited {
+  color: #222 !important;
+  text-decoration:underline;
+}
+
+a.sub-text, a.sub-text:visited {  
+  color: #222 !important;
+  text-decoration:underline;       
+  font-weight:bold;
+}
+
+p.sub-text a:hover, a.sub-text:hover {
+  text-decoration:none !important;
+}
+
+h3.sub-text {
+  color: #418A99;
+}
+
+p.sub-text-2 {
+  color: #0E5782;
+  margin:2px 0px 2px 0px;
+  font-size: 11px;
+  text-align: left;
+}
+
+ul.related-link-list li {
+  padding-left:25px;
+  background: url("right_arrow_orange.gif") 3px no-repeat;
+}
+
+ul.document-link-list li {
+  padding-left:30px;
+  min-height:16px;
+  background: url("icon_file.gif") 2px no-repeat;
+  overflow:hidden;
+}
+
+ul.document-link-list li.pdf {
+  background: url("icon_pdf.png") 2px no-repeat;
+}
+ul.document-link-list li.xlsx,.side-content-block .side-menu-block ul.document-list li.xls {
+  background: url("icon_excel.png") 2px no-repeat;
+}
+
+ul.document-link-list li.docx,ul.document-link-list li.doc {
+  background: url("icon_word.png") 2px no-repeat;
+}
+ul.document-link-list li.jpg,
+ul.document-link-list li.gif,
+ul.document-link-list li.png{
+  background: url("icon_img.gif") 2px no-repeat;
+}
+
+ul.document-link-list li.zip {
+  background: url("icon_zip.gif") 2px no-repeat;
+}
+
+
+
+.form-list ul.document-link-list li {
+  border-bottom:0px;
+  margin-bottom:0px;
+}
+
+ul.document-link-list a, ul.document-link-list a:visited {
+  color: #2D2D2D;
+  padding-top:2px;
+  display:block;
+}
+
+/* OVERRIDE RAD CONTROL CSS STYLING */
+.radEnabledCss_Default, .radHoverCss_Default, .radFocusedCss_Default {
+  border: 1px solid #C6C6C6 !important;
+  padding: 4px 0px 4px 4px !important;
+  color: #828284 !important;
+}
+
+.filter-wrap .pickerWrapper_Default table,.filter-wrap .pickerWrapper_Default table table {
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+.filter-wrap .pickerWrapper_Default {
+  vertical-align:middle;
+}
+
+.filter-wrap table td,.filter-wrap table th {
+  padding:0px !important;
+  border:0px;
+  background: auto !important;
+}
+
+.filter-wrap .radPopupImage_SeamlessCMS_SCSearch {
+  position: relative;
+  left: -16px;
+  top: 2px;
+}
+
+table.calendarWrapper_SeamlessCMS_SCSearch {
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+table.calendarWrapper_SeamlessCMS_SCSearch td, table.calendarWrapper_SeamlessCMS_SCSearch th {
+  padding:0px;
+  border:0px;
+  background: auto !important;
+}
+
+table.calendarWrapper_SeamlessCMS_SCSearch td table td {
+  padding:auto;
+}
+table.calendarWrapper_SeamlessCMS_SCSearch tr:nth-child(2n+1) td,
+table.calendarWrapper_SeamlessCMS_SCSearch tr:nth-child(2n) td{
+  background: transparent;
+  vertical-align:middle;
+  border:0px;
+}
+
+.separator {
+  border-bottom: 1px solid #777; 
+  margin-top: 20px !important;
+  margin-bottom: 25px !important;
+}
+
+
+
+

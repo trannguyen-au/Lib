@@ -12,7 +12,7 @@ $.fn.wnPlaceHolder = function(options) {
 	var options = $.extend({
     content : '',
     submitButton: "input[type='submit']",
-    holderColor: "#88f",
+    holderColor: "#888",
     color: "#000"
     
   },options);
@@ -75,7 +75,7 @@ $.fn.wnPlaceHolder = function(options) {
 	
 	
 	return this.each(function() {
-    if($(this).is('input, textarea')) {
+    if($(this).is('input[type="text"],input[type="password"], textarea')) {
       var currentItem = $(this);
       if(isHtml5Support()) {
         initHtml5(currentItem);
@@ -84,9 +84,10 @@ $.fn.wnPlaceHolder = function(options) {
         init(currentItem);
       }
     }
+    
     else if($(this).is("div") || $(this).is("span")) { // if this is a wrapper by div or span and has the placeholder property
       var tempOption = $.extend(options,{content: $(this).attr("placeholder")});
-      $(this).find("input, textarea").wnPlaceHolder(tempOption);
+      $(this).find("input[type='text'], input[type='password'], textarea").wnPlaceHolder(tempOption);
     }
     else if($(this).is('select')) {  // for select item
     

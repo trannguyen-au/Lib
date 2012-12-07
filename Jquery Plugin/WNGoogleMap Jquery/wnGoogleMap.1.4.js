@@ -146,7 +146,8 @@ $.fn.wnGoogleMap = function(options) {
       marker = new google.maps.Marker({
         map: map, 
         position: markerPosition,
-        icon : options.markerImage
+        icon : options.markerImage,
+        title:"1"
       });
     }
     else {
